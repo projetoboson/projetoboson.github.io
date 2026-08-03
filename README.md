@@ -8,7 +8,7 @@
 
 ---
 
-## Sobre o Projeto
+## SOBRE O PROJETO
 
 O **BOSON** é uma plataforma web desenvolvida para apoiar as atividades do Laboratório de Ciências Físicas e Biológicas da Escola Estadual Altivo Leopoldino de Souza.
 
@@ -18,7 +18,7 @@ Além de servir como portal institucional do laboratório, o BOSON será expandi
 
 ---
 
-## Objetivos
+## OJETIVOS
 
 - Divulgar o Laboratório de Ciências.
 - Organizar a Feira de Ciências.
@@ -30,7 +30,7 @@ Além de servir como portal institucional do laboratório, o BOSON será expandi
 
 ---
 
-# 🚀 Funcionalidades disponíveis
+# FUNCIONALIDADES DISPONÍVEIS
 
 - Página inicial
 - Informações do laboratório
@@ -43,20 +43,21 @@ Além de servir como portal institucional do laboratório, o BOSON será expandi
 ---
 
 ## Recursos em desenvolvimento
+- Cadastro para Feira de Ciências
 
+## Recursos para implementação futura
 - Cadastro de espécimes biológicos
 - Banco de dados das coleções
-- Área do aluno
-- Login de usuários
-- Painel administrativo
-- Cadastro para Feira de Ciências
 - Busca de espécies
 - Sistema de upload de imagens
+- Login de usuários
+- Área do aluno
+- Painel administrativo
 - Dashboard estatístico
 
 ---
 
-## 🌌 Futuras funcionalidades
+## 🌌 FUTURAS FUNCIONALIDADES
 
 ### BOSON Galaxy
 
@@ -210,7 +211,7 @@ Este projeto está licenciado sob a licença MIT.
 
 Natanael Batista Alves
 
-Professor de Ciências da Natureza e Suas Tecnologias
+Professor de Ciências da Natureza e Suas Tecnologias. Professor da rede estadual de ensino de Minas Gerais (SEEMG). 
 
 Escola Estadual Altivo Leopoldino de Souza
 
