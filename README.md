@@ -1,4 +1,4 @@
-# 🌌 BOSON
+# PLATAFORMA BOSON
 
 > Plataforma Digital do Laboratório de Ciências Exatas e Biológicas
 
@@ -8,17 +8,17 @@
 
 ---
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
-O **BOSON** é uma plataforma web desenvolvida para apoiar as atividades do Laboratório de Ciências Exatas e Biológicas da Escola Estadual Professor Pedro de Souza.
+O **BOSON** é uma plataforma web desenvolvida para apoiar as atividades do Laboratório de Ciências Físicas e Biológicas da Escola Estadual Altivo Leopoldino de Souza.
 
 O projeto tem como objetivo integrar ciência, tecnologia e educação por meio de uma plataforma moderna, acessível e interativa, oferecendo recursos para estudantes, professores e visitantes.
 
-Além de servir como portal institucional do laboratório, o BOSON será expandido para incluir ferramentas de gestão, pesquisa científica, divulgação de projetos e experiências digitais voltadas ao ensino de Ciências.
+Além de servir como portal institucional do laboratório, o BOSON será expandido para incluir ferramentas de Banco de Dados, pesquisa científica, divulgação de projetos e experiências digitais voltadas ao ensino de Ciências.
 
 ---
 
-## 🎯 Objetivos
+## Objetivos
 
 - Divulgar o Laboratório de Ciências.
 - Organizar a Feira de Ciências.
@@ -30,9 +30,7 @@ Além de servir como portal institucional do laboratório, o BOSON será expandi
 
 ---
 
-# 🚀 Funcionalidades
-
-## ✅ Disponíveis
+# 🚀 Funcionalidades disponíveis
 
 - Página inicial
 - Informações do laboratório
@@ -44,7 +42,7 @@ Além de servir como portal institucional do laboratório, o BOSON será expandi
 
 ---
 
-## 🔜 Em desenvolvimento
+## Recursos em desenvolvimento
 
 - Cadastro de espécimes biológicos
 - Banco de dados das coleções
@@ -103,29 +101,16 @@ Ambiente para materiais didáticos.
 
 ---
 
-## 🛠 Tecnologias
+## 🛠 Contexto e Descrição das tecnologias utilizadas para este projeto
 
-### Front-end
+- O projeto BÓSON foi desenvolvido pelos alunos do curso Técnico de Informática da Escola Estadual Altivo Leopoldino de Souza. O curso foi ofertado pela Secretaria de Estado de Educação de Minas Gerais(SEEMG), durante o period de 2025-2026, compondo 3 módulos de curso. Sob a orientação do Professor Natanael Alves, estudante de Engenharia de Software, os alunos colocaram em prática todo o aprendizado que receberam durante as aulas. 
 
-- HTML5
-- CSS3
-- JavaScript
+### Tecnologias Front-end utilizadas no projeto: 
 
-### Futuramente
+- HTML5 - Linguagem de Marcação Hipertexto. 
+- CSS3 - Linguagem de Estilização em Cascata
+- JavaScript - Linguagem de Programação
 
-- React
-- Bootstrap
-- Sass
-- Three.js
-
-### Back-end
-
-- Node.js
-- Express
-
-### Banco de Dados
-
-- PostgreSQL
 
 ### Ferramentas
 
@@ -157,11 +142,9 @@ boson/
 
 ---
 
-# 🌎 Visão do Projeto
+# Visão do Projeto
 
-O BOSON não é apenas um site.
-
-A proposta é construir uma plataforma digital voltada para o ensino de Ciências, reunindo recursos educacionais, gestão de laboratório, divulgação científica e experiências interativas.
+O BOSON não é apenas um site. A proposta é construir uma plataforma digital voltada para o ensino de Ciências, reunindo recursos educacionais, gestão de laboratório, divulgação científica e experiências interativas.
 
 O projeto evoluirá de forma incremental, acompanhando o desenvolvimento tecnológico da equipe e as necessidades da escola.
 
@@ -175,7 +158,7 @@ O BOSON busca despertar o interesse pela ciência utilizando tecnologias moderna
 
 ---
 
-# 📈 Roadmap
+# Roadmap
 
 ## Versão 1
 
@@ -227,9 +210,9 @@ Este projeto está licenciado sob a licença MIT.
 
 Natanael Batista Alves
 
-Professor de Ciências
+Professor de Ciências da Natureza e Suas Tecnologias
 
-Escola Estadual Professor Pedro de Souza
+Escola Estadual Altivo Leopoldino de Souza
 
 Minas Gerais - Brasil
 
