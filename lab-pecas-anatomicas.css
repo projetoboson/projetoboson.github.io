@@ -1,0 +1,218 @@
+/**__________________________________________________________________________________________________PARTE  - CIÊNCIAS DA NATUREZA*/
+.sectionAnatomy{
+   min-height: 100vh; 
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+   background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0, 0.8)100%), url(./imagens.img/pecas-anatomicas/IMG_1135.JPG);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position:  center;
+   background-attachment: fixed;
+   border-bottom: 1px red solid;
+}
+.sectionAnatomyTitle{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   
+}
+.sectionAnatomyTitleH1{
+   font-family: "Michroma", sans-serif;
+   font-size: 44px;
+   letter-spacing: 15px;
+   color: rgb(255, 255, 255);
+}
+.sectionAnatomyTitleP{
+   font-family: "Michroma", sans-serif;
+   color: rgb(255, 255, 255);
+   letter-spacing: 10px;
+}
+.titleAnatomy{
+   font-family: "Michroma", sans-serif;
+   font-size: 28px;
+   letter-spacing: 5px;
+   color: #ffffff;
+   margin-bottom: 15px;
+}
+.subTitleAnatomy{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+   font-size: 22px;
+   color: red;
+   margin-bottom: 15px;
+}
+.anatomyText{
+   display: flex;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+   font-size: 18px;
+   text-align: left;
+   margin-left: 100px;
+   margin-top: 50px;
+   flex-direction: column;
+   width: 66%;
+   gap: 35px 0px;
+}
+
+.sectionAnatomyIntrod{
+   display: flex;
+   min-height: 175vh;
+   background-color:#000000;
+   border-bottom: 1px red solid;
+
+}
+.AnatomyDivA{
+   display: flex;
+   flex-direction: column;
+   min-width: 50%;
+   border-bottom: 1px red solid;
+
+}
+.AnatomyDivB{
+   display: flex;   
+   justify-content: center;
+   align-items: center;
+   min-width: 50%;
+   border-left: 1px red solid;
+}
+
+.iconeEsqueleto{
+   display: flex;
+   height: 1000px;
+}
+
+.anatomyInfo{
+   display: flex;
+   flex-direction: column;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+   font-size: 16px;
+}
+.anatomyInfo span{
+   color: #323232;
+}
+
+.sectionAnatomicalPieces{
+   min-height: 50vh;
+   background-color: #000000;
+   border-bottom: 1px red solid;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+   gap: 25px 0px;
+}
+.sectionAnatomyPiecesTitle{
+   font-family: "Michroma", sans-serif;
+   font-size: 38px;
+   letter-spacing: 15px;
+   color: rgb(255, 255, 255);  
+}
+.sectionAnatomyPiecesText{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 18px;
+   font-weight: 100;
+   text-align: center;
+   color: rgb(255, 255, 255); 
+   width: 75%;
+}
+.buttonAnatomy{
+   width: 250px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   padding: 1rem; 
+   background-color: transparent; 
+   color: #f4f4f5;
+   border: 2px solid #E12726;
+   border-radius: 50px;
+   cursor: pointer;
+}
+.buttonAnatomy:hover{
+   background-color: #e12726;
+
+}
+.piecesTitle{
+   color: #ffffff;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+   font-size: 16px;
+}
+.pieceText{
+   color: #ffffff;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+   font-size: 12px;
+}
+.pieces-img{
+   width: 215px;
+}
+.sectionPiecesNew{
+   min-height: 100vh;
+   border-bottom: 1px red solid;
+}
+.sectionPiecesNew{
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   border-bottom: 1px red solid;
+}
+.sectionPiecesNewG{
+   display: flex;
+}
+.sectionPiecesNewBa{
+   min-height: 100vh;
+   background-image: url(./imagens.img/pecas-anatomicas/IMG_1124.JPG);
+   background-position: bottom;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   min-width: 50%;
+   border-right: 1px red solid;
+
+
+}
+.sectionPiecesNewT{
+   background-color: #000000;
+   min-width: 50%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.tituloH3{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  align-items: center;
+  justify-content: center; 
+  font-family: "Michroma", sans-serif;
+  letter-spacing: 5px;
+  color: #f4f4f5;
+}
+.blocoIntroductionParagraph{
+  text-align: end;
+  line-height: 24px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  color: #ffffff;
+  width: 75%;
+}
+
+.sectionPiecesNewBb{
+   min-height: 100vh;
+   background-image: url(./imagens.img/pecas-anatomicas/IMG_1435.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   min-width: 50%;
+   border-right: 1px red solid;
+}
