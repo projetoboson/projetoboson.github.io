@@ -1,0 +1,856 @@
+/**CONFIGURAÇÕES GLOBAIS*/
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Tela de carregamento */
+#loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    transition:opacity .6s ease;
+}
+
+.circulo{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:3px solid #444;
+    position:relative;
+}
+
+.circulo::before{
+    content:"";
+    position:absolute;
+    inset:-3px;
+    border-radius:50%;
+    border:3px solid transparent;
+    border-top-color:#ff0000;
+    border-right-color:#ff0000;
+    animation:girar 1s linear infinite;
+}
+
+@keyframes girar{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+
+html{
+   scroll-behavior: smooth;
+}
+
+small{
+   text-align: justify;
+}
+.logo{
+   /*filter: drop-shadow(5px 5px 0px rgba(255, 208, 0, 0.459));*/
+   /* filter: drop-shadow(5px 5px 0px #133d64); */
+   margin-right: 50px;
+   width: 60px;
+}
+
+.logo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  vertical-align: top; 
+}
+
+.logo:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+.logo-tubo {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    top: 8px;
+}
+
+.logo-tubo img {
+    display: block;
+}
+
+/* Posiciona o emissor de bolhas DENTRO do tubo */
+.container-bolhas {
+    position: absolute;
+    /* Ajuste o 'top' conforme onde termina o líquido no seu desenho */
+    top: 5%; 
+    left: 30%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+}
+
+.container-bolhas span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.6); /* Bolhas brancas/transparentes */
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+/* Ativa a animação quando o mouse passa na logo */
+.logo-tubo:hover .container-bolhas span {
+    animation: efeito-quimico 1.5s infinite ease-out;
+    animation-delay: var(--delay);
+}
+
+@keyframes efeito-quimico {
+    0% {
+        transform: translate(-50%, 0) scale(0.2);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        /* Sobe negativamente para sair do topo da imagem */
+        transform: translate(calc(-50% + var(--x)), -40px) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.small{
+   color: rgb(255, 255, 255);
+   margin-left: -45px;
+   /* filter: drop-shadow(5px 5px 0px #133d64); */
+   font-family: "Roboto Condensed", sans-serif;
+   font-weight: 500;
+}
+/**______________________________________________________________________________________________________BARRA DE NAVEGAÇÃO | TODAS AS PÁGINAS*/
+.header{
+   display: flex;
+   text-align: center;
+   align-items: center;
+   background-color: #000000;
+   color: rgb(220,220,230);
+   min-height: 15vh;
+   flex-wrap: wrap;
+}
+.header-header{
+   display: flex;
+   margin-left: 50px;
+}
+/* header a{
+   margin-left: 50px;
+} */
+header img{
+   height: 50px;
+   width: 55px;
+}
+.header-nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex: 1;
+}
+.header-nav-links{
+   display: flex;
+   gap: 0px 30px;
+}
+nav a{
+   color: rgb(255, 255, 255);
+   font-family: "Roboto Condensed", sans-serif;
+   font-weight: 100;
+   font-size: 12px;
+   font-weight: 100;
+   text-decoration: none;
+   letter-spacing: 1.5px;
+}
+.header-nav-matricula{
+   display: flex;
+   margin-right: 50px;
+   gap: 0px 15px;
+}
+.header-nav-matricula a {
+   padding: 0.75rem;
+}
+a{
+   text-decoration: none;
+}
+.animado{
+   position: relative;
+   color: #fffefe;
+   text-decoration: none;
+   font-size: 14px;
+}
+.animado::after{
+   content: '';
+   position: absolute;
+   width: 0;
+   height: 1px;
+   bottom: -45.5px;
+   left: 0;
+   background-color: #E12726;
+   transition: width 0.3s ease;
+  
+}
+.animado:hover::after{
+   width: 100%;
+}
+.btn-animado{
+   border: solid 2px #E12726;
+   padding: 0.5rem;
+   background-color: #000000;
+   color: #F4F4F5;
+   border-radius: 5px;
+}
+.btn-animado:hover{
+    background-color: #E12726;
+    color: #f4f4f5;
+}
+/**__________________________________________________________________________________________________________PÁGINA INICIAL DO PROJETO*/
+.section-laboratory{
+   min-height:85vh;
+   display: flex;
+
+   flex-direction: column; 
+   justify-content:center;
+
+   flex-direction: column;
+   background: linear-gradient(to right, rgba(0,0,0,1), transparent), url(./imagens.img/microscopia-laminas/IMG_1244.JPG);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+   border-bottom: 1px #E12726 solid;
+   
+   font-family: "Michroma", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+
+   position: relative;
+}
+.section-laboratory p{
+   max-width: 550px;
+   width: 90%;
+   /* width: 550px; */
+}
+.arrow_down{
+   height: 50px;
+   color: #f4f4f5;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.arrow_down:hover{
+   color:#E12726;
+   cursor: pointer;
+}
+.arrow{
+   position: relative;
+   /* top: 200px; */
+   cursor: pointer;
+}
+
+/**______________________________________________________________________________________________________________PARTE: COL. ZOOLÓGICAS*/
+.section-invertebrates{
+   min-height: 100vh; 
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background: linear-gradient(to right, rgba(0,0,0,1), transparent), url(./imagens.img/invertebrados/IMG_1287.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+   border-bottom: 1px #E12726 solid;
+}
+
+.section-invertebrates h4{
+   width: 550px;
+}
+.section-invertebrates p{
+   width: 550px;
+}
+.lab-colecao-zoologica{
+   min-height:300vh;
+   display: flex;
+   background-color: #f4f4f5;
+}
+.section-invertebrados-txt{
+   min-height: 150vh;
+}
+.section-invertebrados-int{
+   min-height: 100vh;
+  background: linear-gradient(to right, rgba(0,0,0,1), transparent), url(./imagens.img/vertebrados/IMG_1280.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position-y: 85%;
+}
+.section-invertebrados-img{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 75vh;
+   background-color: #f4f4f5;
+   gap: 0px 50px;
+}
+.section-invertebrados-img p{
+   color: #323232;
+   font-size: 12px;
+   font-family: "Roboto Condensed", sans-serif;
+   margin-bottom: 10px;
+   width: 215px ;
+}
+.invertebrados-img{
+   width: 250px;
+   height: 225px;
+   cursor: pointer;
+}
+.invertebrados-img:hover{
+   transform: scale(1, 1);
+   background:white;
+   box-shadow: 2px 2px 20px rgba(0,0,0,.5);
+}
+.invertebrados-txt h3{
+   color: #323232;
+   margin-bottom: 5px;
+   font-size: 14px;
+   font-family: "Roboto Condensed", sans-serif;
+}
+.invertebrados-txt p{
+   color: #323232;
+   text-align: justify;
+   line-height: 24px;
+   width: 250px;
+}
+.invertebrados-txt button{
+   border: solid 2px #08569e;
+   padding: 0.25rem;
+   background-color: #08569e;
+   color: #f4f4f5;
+   cursor: pointer;
+   font-family: "Roboto Condensed", sans-serif;
+   font-size: 12px;
+}
+.section-invertebrados-txt p{
+   color: #323232;
+   text-align: justify;
+   line-height: 24px;
+   margin-left: 25px;
+   margin-right: 25px;
+}
+.section-invertebrados-txt h3{
+   color: #323232;
+   margin-bottom: 5px;
+   margin-top: 15px;
+   margin-left: 25px;
+   font-size: 14px;
+   font-family: "Roboto Condensed", sans-serif;
+}
+/**___________________________________________________________________________________________________________________PARTE PEÇAS ANATOMICAS*/
+.section-anatomical-pieces{
+   min-height: 100vh; 
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background: linear-gradient(to right, rgba(0,0,0,1), transparent), url(./imagens.img/pecas-anatomicas/IMG_1202.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   border-bottom: 1px #E12726 solid;
+}
+.section-anatomical-pieces p{
+   width: 550px;
+}
+.sub-anatomical-pieces{
+   min-height: 100vh;
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   background-image: url(./imagens.img/pecas-anatomicas/IMG_1135.JPG);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center; 
+   background-attachment: fixed;
+}
+.sub2-anatomical-pieces{
+   display: flex;
+   flex-wrap: wrap;
+   background-color: rgb(255, 255, 255);
+   min-height: 80vh;
+   align-items: center;
+   justify-content: center;
+   gap: 0px 25px;
+}
+.sub2-anatomical-pieces button{
+   border: solid 2px #08569e;
+   padding: 0.25rem;
+   background-color: #08569e;
+   color: #f4f4f5;
+   cursor: pointer;
+   font-family: "Roboto Condensed", sans-serif;
+   font-size: 12px;
+}
+.sub2-anatomical-pieces h4{
+   color: #323232;
+   margin-bottom: 5px;
+   font-size: 14px;
+   font-family: "Roboto Condensed", sans-serif;
+}
+.sub2-anatomical-pieces p{
+   color: #323232;
+   font-size: 12px;
+   font-family: "Roboto Condensed", sans-serif;
+   margin-bottom: 10px;
+   width: 215px ;
+}
+.pecas-anatomicas-img{
+   width: 200px;
+   height: 225px;
+}
+.pecas-anatomicas-img:hover{
+   transform: scale(1, 1);
+   background:white;
+   box-shadow: 2px 2px 20px rgba(0,0,0,.5);
+}
+/**___________________________________________________________________________________________________________________PARTE FETOS*/
+.section-fetuses{
+   min-height: 100vh; 
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background: linear-gradient(to right, rgba(0,0,0,1), transparent), url(./imagens.img/fetos/IMG_1306C.PNG);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top;
+   border-bottom: 1px #E12726 solid;
+}
+.lab-fetuses{
+   min-height:300vh;
+   display: flex;
+   background-color: #ffffff;
+}
+.section-fetuses p{
+   width: 550px;
+}
+
+
+/**____________________________________________________________________________________________________________PARTE FINAL | TODAS AS PAGINAS*/
+
+.icone-section-five-title{
+      width: 250px;
+
+}
+.section-final {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; 
+  min-height: 25vh;
+  background-color: #191919;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Container dos ícones */
+.section-final nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* IMPORTANTE — faltava isso */
+.animado1 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Imagem */
+.animado1 img {
+  display: block;
+}
+
+/* Círculo */
+.animado1::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Hover */
+.animado1:hover::after {
+  opacity: 1;
+}
+
+footer{
+   display: flex;
+   align-items: center;
+   min-height: 50vh;
+   background-color: #000000;
+}
+.footer-one{
+   display: flex;
+   background-color: #000000;
+   min-height: 75vh;
+   min-width: 30%;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.footer-one img{
+   margin-bottom: 20px;
+}
+.footer-two{
+   display: flex;
+   flex-direction: column;
+   background-color: #000000;
+   min-height: 75vh;
+   min-width: 70%;
+   justify-content: center;
+   align-items: center;
+   gap: 35px 0px;
+}
+.footer-two a{
+   color: #323232;
+   font-family: "Roboto Condensed", sans-serif;
+   font-size: 14px;
+   font-weight: 100;
+   text-decoration: none;
+   letter-spacing: 1.5px;
+   margin-bottom: 5px;
+}
+.footer-two a:hover{
+   font-weight: 100;
+   color: #E12726;
+   cursor: pointer;
+}
+
+.footer-two h5{
+   color: #F4F4F5;
+   font-family: "Roboto Condensed", sans-serif;
+   margin-bottom: 7.5px;
+
+}
+
+footer a{
+   color: rgb(220,220,230);
+   font-family: "Roboto Condensed", sans-serif;
+   font-size: 16px;
+   letter-spacing: 2px;
+   font-weight: 400;
+}
+.footer-two-bloco{
+   display: flex;
+   gap: 0px 50px;
+}
+.footer-two-bloco-bloco{
+   display: flex;
+   flex-direction: column;
+}
+.footer-title{
+   text-align: center;
+}
+.footer-one-init{
+   display: flex;
+   gap: 0px 20px;
+   margin-top: 20px;
+}
+.footer-one-init a{
+   font-weight: 400;
+} 
+.title-principal{
+   color: rgb(220,220,230);
+   font-family: "Michroma", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+   font-size: 28px;
+   margin-bottom: 30px;
+
+   letter-spacing: 10px;
+}
+.title-principal-new{
+  color: rgb(220,220,230);
+   font-family: "Michroma", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+   font-size: 54px;
+   margin-bottom: 15px;
+   letter-spacing: 30px;
+}
+
+h2{
+   color: rgb(0, 0, 0);
+   font-family: "Roboto Condensed", sans-serif;
+   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+   font-size: 28px;
+   margin-bottom: 15px;
+   text-align: center;
+}
+.h2-siga{
+   color: rgb(223, 223, 223);
+   font-family: "Roboto Condensed", sans-serif;
+   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+   font-size: 28px;
+   margin-bottom: 15px;
+}
+
+h4{
+   color: rgb(0, 0, 0);
+   font-family: "Roboto Condensed", sans-serif;
+   /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+   font-size: 22px;
+   margin-bottom: 15px;
+   text-align: center;
+}
+section p{
+   font-family: "Roboto Condensed", sans-serif;
+   color:rgb(220,220,230);
+   /**max-width: 35rem;*/
+}
+.section-introduction{
+   margin-left: 75px;
+   max-width: 600px;
+   /* margin-left: 75px; */
+}
+.section-button{
+   display: flex;
+   gap: 0px 10px;
+   align-items: center;
+   padding: 0.75rem 1rem 0.75rem 1rem;
+   color: rgb(220,220,230);
+   background-color: transparent;
+   margin-top: 30px;
+   cursor: pointer;
+   font-family: "Roboto Condensed", sans-serif;
+   font-size: 12px;
+   border-radius: 5px;
+   border-color: #E12726;
+}
+
+header label:hover{
+   background-color: aliceblue;
+   color: #08569e;
+}
+
+/* esconde o checkbox */
+.anatomica {
+  display: none;
+}
+
+/* estilo do botão */
+.botao {
+  background: #08569e;
+  color: rgb(255, 255, 255);
+  padding: 7px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* texto escondido */
+.texto {
+  display: none;
+  margin-top: 10px;
+}
+
+/* quando clicar → mostra texto */
+.anatomica:checked + .botao + .texto {
+  display: block;
+}
+
+
+
+.footer1{
+   text-align: center
+}
+.section-seven{
+   min-height: 100vh;
+   background-color: darkgrey;
+}
+.section-eight{
+   min-height: 100vh;
+   background-color: darkslateblue;
+}
+.a1{
+   margin-left: 12px;
+   margin-right: 10px;
+}
+.a2{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.a3{
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+/* .circulo {
+    width: 200px;
+    height: 200px;
+    border: 3px dotted #fff;
+    border-radius: 50%;
+} */
+
+.credenciais{
+   display: flex;
+   justify-content: center;
+   align-items: end;
+   background-color: #000000;
+   color: #323232;
+   font-family: "Roboto Condensed", sans-serif;
+   font-size: 14px;
+   gap:  0px 40px;
+}
+
+.subtitle-section{
+      
+   font-family: "Michroma", sans-serif;
+   font-size: 16px;
+   font-weight: 300;
+   font-style: normal;
+   letter-spacing: 10px;
+   word-spacing: 5px;
+   margin-top: 30px;
+   color:  #f4f4f5;
+}
+
+.contact-reserva{
+   min-height: 150vh;
+   background-color: #000000;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content:space-evenly;
+
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 16px;
+   letter-spacing: 5px;
+   color: #868686;
+
+   background: linear-gradient(
+        99deg,
+        #000000 0%,
+        #1f1f1f 50%,
+        #000000 100%
+    );
+}
+.title-contact{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 22px;
+   font-weight: 100;
+   letter-spacing: 5px;
+   color: #f4f4f5;
+}
+.form-reserva{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border: transparent;
+}
+
+.form-reserva input{
+   background-color: transparent;
+   padding: 0.5rem;
+   width: 650px;
+   border: transparent;
+   border-bottom: 1px solid #868686;
+   margin-bottom: 25px;
+   color: red;
+}
+
+.form-reserva textarea{
+   background-color: transparent;
+   padding: 0.5rem;
+   width: 650px;
+   border: transparent;
+   border-bottom: 2px solid #868686;
+   margin-top: 30px;
+}
+
+.form-reserva label{
+   width: 650px;
+}
+.button-contact{
+   background-color: transparent;
+   padding: 1rem;
+   color: #ffffff;
+   border: 2px red solid;
+   border-radius: 50px;
+   margin-top: 25px;
+   width: 400px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   letter-spacing: 4px;
+}
+
+.button-contact:hover{
+   background-color: red;
+   cursor: pointer;
+}
+.form-reserva input:hover{
+      border-bottom: 1px red solid;
+}
+.form-reserva textarea:hover{
+      border-bottom: 1px red solid;
+}
+.form-reserva input:focus{
+   outline: none;
+   box-shadow: none;
+   border-bottom: 2px solid #868686;
+
+}
+.form-reserva textarea:focus{
+   outline: none;
+   box-shadow: none;
+   border-bottom: 2px solid #868686;
+
+}
+.form-reserva-link{
+   font-weight: 100;
+   color: #f4f4f5;
+}
+.form-reserva-link:hover{
+   color: red;
+   cursor: pointer;
+}
+
+
+.vision-planner{
+  position: fixed;
+  top: 150px;
+  width: 50%;
+  max-width: 1200px;
+  padding: 15px 30px;
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(25px) saturate(180%);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 22px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  inset: 0 1px 1px rgba(255, 255,255, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
