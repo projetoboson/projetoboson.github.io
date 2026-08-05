@@ -25,7 +25,7 @@
 .proton-project-blocoA{
    display: flex;
    background-color: #000000;
-   width: 50%;
+   min-width: 50%;
    
    align-items: flex-start;
    padding-left: 80px;
@@ -44,7 +44,7 @@
    background-image: url(./imagens.img/quimica-lab/IMG_4908.JPG);
    background-repeat: no-repeat;
    background-size: cover;
-   width: 50%;
+   min-width: 50%;
    background-position: center;
    
    border-right: solid 2px #e12726;
@@ -56,7 +56,7 @@
    background-image: url(./imagens.img/quimica-lab/IMG_4893.JPG);
    background-repeat: no-repeat;
    background-size: cover;
-   width: 50%;
+   min-width: 50%;
    background-position: center;
    
    border-right: solid 2px #e12726;
@@ -84,14 +84,14 @@
    font-weight: 100;
    color: #ffffff;  
    text-align: center;
-   width: 50%;
+   min-width: 50%;
 }
 .proton-project-blocoD{
    min-height: 100vh;
    background-image: url(./imagens.img/quimica-lab/IMG_4897.JPG);
    background-repeat: no-repeat;
    background-size: cover;
-   width: 50%;
+   min-width: 50%;
    background-position: bottom;
    
    border-right: solid 2px #e12726;
@@ -142,4 +142,180 @@
    font-size: 18px;
    color: #f4f4f5;
    margin-bottom: 15px;
+}
+
+
+/* =======================================================
+   CELULARES
+======================================================= */
+
+@media (max-width:480px){
+
+    /* GERAL */
+
+    section{
+        box-sizing:border-box;
+    }
+
+    h1{
+        font-size:1.8rem;
+        text-align:center;
+    }
+
+    h2{
+        font-size:1.5rem;
+        text-align:center;
+    }
+
+    h3{
+        font-size:1.2rem;
+        text-align:center;
+    }
+
+    p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+    /* INTRODUÇÃO */
+
+    .section-introduction,
+    .section-quimica-lab,
+    .section-five-title{
+        display: flex;
+        background-position:center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height:100vh;
+    }
+
+    .icone-section-five-title{
+        width: 150px;
+        margin-bottom: 50px;
+    }
+
+    .title-principal-new{
+        font-size:1rem;
+        text-align:center;
+        width: 75%;
+
+    }
+
+    .subtitle-section{
+        font-size:0.5rem;
+        text-align:center;
+        width: 75%;
+    }
+
+    /* PROJETO */
+
+    .proton-project{
+        display: flex;
+    }
+
+    .proton-project-initA,
+    .proton-project-initB{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .proton-project-blocoA,
+    .proton-project-blocoB,
+    .proton-project-blocoC,
+    .proton-project-blocoD{
+
+        display: flex;
+        background-position:center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 100%;
+        text-align: center;
+        width: 100%; 
+        display: flex;
+        min-height: 60vh;
+        text-align: center;
+        justify-content: center;
+        padding: 40px 20px;
+    }
+
+    .icone-proton-project{
+        width:150px;
+        height:auto;
+        margin-bottom:20px;
+    }
+
+    .proton-project-blocoA-title{
+        width:100%;
+        justify-content: center;
+        font-size:1.7rem;
+        text-align:center;
+        letter-spacing:2px;
+    }
+
+    .proton-project-info{
+        min-height:60vh;
+        text-align:center;
+        padding: 40px 20px;
+    }
+
+    /* FOOTER */
+
+    footer{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+
+    }
+
+    .footer-one{
+
+        width:100%;
+        margin-bottom:30px;
+
+    }
+
+    .footer-two{
+
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+        width:100%;
+
+    }
+
+    .footer-two-bloco{
+
+        display:flex;
+        flex-direction:column;
+        gap:25px;
+
+    }
+
+    .footer-two-bloco-bloco{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+
+    }
+
+    /* REDES SOCIAIS */
+
+    .section-final img{
+
+        display:block;
+        margin:0 auto;
+    }
+
 }
