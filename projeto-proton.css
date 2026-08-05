@@ -88,7 +88,19 @@
 }
 .proton-project-blocoD{
    min-height: 100vh;
-   background-image: url(./imagens.img/quimica-lab/IMG_4897.JPG);
+   background-image: url(./imagens.img/quimica-lab/IMG_4898.JPG);
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-width: 50%;
+   background-position: bottom;
+   
+   border-right: solid 2px #e12726;
+   border-bottom: 2px solid #e12726;
+}
+
+.proton-project-blocoE{
+   min-height: 100vh;
+   background-image: url(./imagens.img/quimica-lab/IMG_4913.png);
    background-repeat: no-repeat;
    background-size: cover;
    min-width: 50%;
@@ -230,7 +242,8 @@
     .proton-project-blocoA,
     .proton-project-blocoB,
     .proton-project-blocoC,
-    .proton-project-blocoD{
+    .proton-project-blocoD,
+    .proton-project-blocoE{
 
         display: flex;
         background-position:center;
