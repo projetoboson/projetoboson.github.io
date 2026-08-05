@@ -54,11 +54,9 @@
       </a>
     </div>
 
-    <!--<button class="menu-toggle" aria-label="Abrir menu">
-      ☰
-    </button>-->
 
-      <nav class="header-nav">
+
+      <nav class="header-nav" id="menu">
         <div class="header-nav-links">     
           <a href="./projeto-neutron.html" class="animado">NÊUTRON</a>
           <a href="./projeto-eletron.html" class="animado">ELÉTRON</a> 
@@ -72,6 +70,10 @@
           <a href="./area-do-estudante.html" class="btn-animado">BIOSFERA</a>
         </div>
       </nav>
+    <button id="btn-menu" class="btn-menu-mobile" aria-label="Abrir menu">
+      ☰
+    </button>
+    
   </header>
 
 
@@ -254,6 +256,16 @@ window.addEventListener('load', () => {
         loader.style.display = 'none';
     }, 600);
 });
+</script>
+
+<script>
+const btnMenu = document.getElementById("btn-menu");
+const menu = document.getElementById("menu");
+
+btnMenu.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+});
+
 </script>
 
 </body>
