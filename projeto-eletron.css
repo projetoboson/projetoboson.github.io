@@ -92,7 +92,6 @@
    background-color: #000000;
    border-bottom: 2px solid #E12726;
 
-   gap: 150px 0px;
 }
 .img-elementos{
    height: 200px;
@@ -140,4 +139,135 @@
    display: flex;  
    min-height: 150vh; 
    background-color: #f4f4f5;
+}
+
+
+/* =======================================================
+   CELULARES
+======================================================= */
+
+@media (max-width:480px){
+
+    /* GERAL */
+
+    /* INTRODUÇÃO */
+    .icone-section-five-title{
+      width: 125px;
+      margin-bottom: 25px;
+   }
+
+    .section-five-title,
+    .section-fisica-lab{
+        display: flex;
+        background-position:center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height:100vh;
+        text-align: center;
+    }
+    .subtitle-section{
+        font-size:0.5rem;
+        text-align:center;
+        width: 75%;
+    }
+
+    /* PROJETO */
+ 
+    .oneFtitle,
+    .twoFtitle,
+    .threeFTitle{
+      font-size: 1.25rem;
+      text-align:center;
+      width: 90%;
+    }
+
+    .oneFtext,
+    .twoColumnTesteContainer{
+      display: flex;
+      width: 250px;
+      font-size: 14px;
+    }
+    .containerElementos{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .twoColumn{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        min-height: 100vh;
+        text-align: center;
+        justify-content: space-between;
+    }
+
+
+    .threeF{
+      min-height: 125vh;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-around
+    }    
+    
+    .containerElementos{
+      display: flex;
+      gap: 75px 0px;
+    }
+    /* FOOTER */
+
+    footer{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+
+    }
+
+    .footer-one{
+
+        width:100%;
+        margin-bottom:30px;
+
+    }
+
+    .footer-two{
+
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+        width:100%;
+
+    }
+
+    .footer-two-bloco{
+
+        display:flex;
+        flex-direction:column;
+        gap:25px;
+
+    }
+
+    .footer-two-bloco-bloco{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+
+    }
+
+    /* REDES SOCIAIS */
+
+    .section-final img{
+
+        display:block;
+        margin:0 auto;
+    }
+
 }
