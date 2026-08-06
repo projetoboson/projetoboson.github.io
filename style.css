@@ -4,7 +4,9 @@
    padding: 0;
    box-sizing: border-box;
 }
-
+body{
+       background:#000;
+}
 /* Tela de carregamento */
 #loader{
     position:fixed;
@@ -224,21 +226,16 @@ a{
 .section-laboratory{
    min-height:85vh;
    display: flex;
-
    flex-direction: column; 
    justify-content:center;
-
-   flex-direction: column;
    background: linear-gradient(to right, rgba(0,0,0,1), transparent), url(./imagens.img/microscopia-laminas/IMG_1244.JPG);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: top;
    border-bottom: 1px #E12726 solid;
-   
    font-family: "Michroma", sans-serif;
    font-weight: 400;
    font-style: normal;
-
    position: relative;
 }
 .section-laboratory p{
@@ -266,6 +263,14 @@ a{
    cursor: pointer;
 }
 
+.texto-laboratorio{
+    letter-spacing:.5px;
+    line-height:28px;
+}
+
+.title-log{
+   width: 25px;
+}
 /**______________________________________________________________________________________________________________PARTE: COL. ZOOLÓGICAS*/
 .section-invertebrates{
    min-height: 100vh; 
