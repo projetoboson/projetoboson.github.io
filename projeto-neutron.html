@@ -26,8 +26,9 @@
   <header class="header">
     <div class="header-header">
       <a href="index.html">
+
         <div class="logo-tubo">
-        <img src="./icones.img/logo-altivo-sf.png" width="90px" class="logo" title="Laboratório Altivo" alt = "Logo da escola Altivo"><br>
+        <img src="./icones.img/logo-altivo-sf.png" width="90px" class="logo" title="" alt = "Logo da escola Altivo"><br>
         <div class="container-bolhas">
         <span style="--x: -10px; --delay: 0s; --size: 8px;"></span>
         <span style="--x: 15px; --delay: 0.4s; --size: 12px;"></span>
@@ -35,13 +36,16 @@
         <span style="--x: 8px; --delay: 1.2s; --size: 10px;"></span>
     </div>
 </div>
-       <div class="small">
+        
+        <div class="small">
           <!-- <small>LABS ALT</small> -->
         </div>
       </a>
     </div>
 
-      <nav class="header-nav">
+
+
+      <nav class="header-nav" id="menu">
         <div class="header-nav-links">     
           <a href="./projeto-neutron.html" class="animado">NÊUTRON</a>
           <a href="./projeto-eletron.html" class="animado">ELÉTRON</a> 
@@ -55,6 +59,10 @@
           <a href="./area-do-estudante.html" class="btn-animado">BIOSFERA</a>
         </div>
       </nav>
+    <button id="btn-menu" class="btn-menu-mobile" aria-label="Abrir menu">
+      ☰
+    </button>
+    
   </header>
 
   <main>
@@ -75,9 +83,10 @@
     <section class="neutron-project-init">
 
       <div class="neutron-project-init-bloco">
-        <h1 class="neutron-project-container-title" >EM CONSTRUÇÃO</h1>
-        <p class="neutron-project-container-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit porro alias vitae possimus sit nemo voluptatum ducimus 
-          nostrum ab exercitationem laboriosam laudantium, maiores veritatis ut facere modi dolores molestiae fugiat.</p>
+        <h1 class="neutron-project-container-title" >COLEÇÃO DE ROCHAS E MINERAIS</h1>
+        <p class="neutron-project-container-text">Nossa coleção de rochas e minerais reúne exemplares de diferentes origens e características,
+           proporcionando aos estudantes uma experiência prática no estudo da Geologia. O acervo permite observar texturas, cores, estruturas 
+           e composições que revelam a história da formação da Terra.</p>
         <button class="neutron-project-container-button">MAIS INFORMAÇÕES</button>
       </div>
 
@@ -88,16 +97,18 @@
       <div class="neutron-project-container-bloco">
         <div class="neutron-project-container-bloco-unitA">
           <img src="./imagens.img/nature-lab/IMG_1600.png" class="neutron-project-container-img">
-          <h3 class="neutron-project-container-title">PROVISÓRIO</h3>
-          <p class="neutron-project-container-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facere consequatur id blanditiis voluptas repudiandae 
-            quisquam excepturi. Culpa modi, quo maiores quos veniam vel, eius doloribus quidem accusantium delectus eligendi.</p>
+          <h3 class="neutron-project-container-title">PROPRIEDADES E IDENTIFICAÇÃO</h3>
+          <p class="neutron-project-container-text">A coleção permite analisar características utilizadas na identificação de rochas, minerais e 
+            mineraloides, como cor, brilho, dureza, densidade, fratura, clivagem e transparência. Essas propriedades são essenciais para a 
+            classificação das amostras e para compreender suas aplicações na ciência, na indústria e no cotidiano.</p>
           <button class="neutron-project-container-button">MAIS INFORMAÇÕES</button>
           </div>
         <div class="neutron-project-container-bloco-unitB">
           <img src="./imagens.img/nature-lab/IMG_1601.png" class="neutron-project-container-img">
-          <h3 class="neutron-project-container-title">PROVISÓRIO</h3>
-          <p class="neutron-project-container-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quae voluptatem excepturi culpa. Maxime iste sunt 
-            fugiat quam voluptate excepturi est quia sequi assumenda? Impedit voluptatem autem voluptate consectetur eum?</p>
+          <h3 class="neutron-project-container-title">MINERAIS</h3>
+          <p class="neutron-project-container-text">Por meio de amostras representativas dos três grandes grupos de rochas, os estudantes 
+            exploram o ciclo das rochas e compreendem como processos como vulcanismo, erosão, sedimentação, pressão e temperatura transformam 
+            continuamente a superfície terrestre.</p>
           <button class="neutron-project-container-button">MAIS INFORMAÇÕES</button>
           </div>
       </div>
@@ -105,16 +116,17 @@
       <div class="neutron-project-container-bloco">
         <div class="neutron-project-container-bloco-unitA">
           <img src="./imagens.img/nature-lab/IMG_1602.png" class="neutron-project-container-img">
-          <h3 class="neutron-project-container-title">PROVISÓRIO</h3>
+          <h3 class="neutron-project-container-title">ROCHAS ÍGNEAS, SEDIMENTARES E METAMÓRFICAS</h3>
           <p class="neutron-project-container-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore illum quibusdam sapiente rerum, tenetur, voluptas 
             dolores, aspernatur velit asperiores nam mollitia odit enim tempore rem aliquam. Magni, delectus? Quo.</p>
           <button class="neutron-project-container-button">MAIS INFORMAÇÕES</button>
         </div>
         <div class="neutron-project-container-bloco-unitB">
           <img src="./imagens.img/nature-lab/IMG_1603.png" class="neutron-project-container-img">
-          <h3 class="neutron-project-container-title">PROVISÓRIO</h3>
-          <p class="neutron-project-container-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo laudantium sit eos recusandae maxime odio animi quam, 
-            minima necessitatibus totam ipsa nihil sed ipsam mollitia quas ducimus ullam rerum repellendus.</p>
+          <h3 class="neutron-project-container-title">MINERALOIDES</h3>
+          <p class="neutron-project-container-text">Além dos minerais, o acervo inclui mineraloides, substâncias naturais que não apresentam estrutura 
+            cristalina organizada. Exemplares como a obsidiana e a opala permitem compreender as diferenças entre materiais cristalinos e amorfos, 
+            ampliando o conhecimento sobre a diversidade dos materiais geológicos.</p>
           <button class="neutron-project-container-button">MAIS INFORMAÇÕES</button>
         </div>
       </div>
@@ -122,16 +134,18 @@
       <div class="neutron-project-container-bloco">
         <div class="neutron-project-container-bloco-unitA">
           <img src="./imagens.img/nature-lab/IMG_1604.png" class="neutron-project-container-img">
-          <h3 class="neutron-project-container-title">PROVISÓRIO</h3>
-          <p class="neutron-project-container-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore illum quibusdam sapiente rerum, tenetur, voluptas 
-            dolores, aspernatur velit asperiores nam mollitia odit enim tempore rem aliquam. Magni, delectus? Quo.</p>
+          <h3 class="neutron-project-container-title">MINERALOGIA</h3>
+          <p class="neutron-project-container-text">A Mineralogia é o ramo da Geologia dedicado ao estudo dos minerais. A coleção permite 
+            conhecer sua classificação, composição, estrutura cristalina e processos de formação, contribuindo para a compreensão da 
+            diversidade mineral existente no planeta.</p>
           <button class="neutron-project-container-button">MAIS INFORMAÇÕES</button>
         </div>
         <div class="neutron-project-container-bloco-unitB">
           <img src="./imagens.img/nature-lab/IMG_1605.png" class="neutron-project-container-img">
-          <h3 class="neutron-project-container-title">PROVISÓRIO</h3>
-          <p class="neutron-project-container-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo laudantium sit eos recusandae maxime odio animi quam, 
-            minima necessitatibus totam ipsa nihil sed ipsam mollitia quas ducimus ullam rerum repellendus.</p>
+          <h3 class="neutron-project-container-title">PROPRIEDADES DOS MINERAIS</h3>
+          <p class="neutron-project-container-text">Cada mineral possui propriedades físicas que auxiliam em sua identificação, como cor, 
+            brilho, dureza, clivagem, fratura, densidade e transparência. A observação dessas características durante as atividades práticas
+             desenvolve a capacidade de análise e classificação das amostras presentes no acervo.</p>
           <button class="neutron-project-container-button">MAIS INFORMAÇÕES</button>
         </div>
       </div>
@@ -251,6 +265,7 @@
   </div>
   
 </footer>   
+ 
     <script>
   window.addEventListener('load', () => {
       const loader = document.getElementById('loader');
@@ -261,6 +276,15 @@
           loader.style.display = 'none';
       }, 600);
   });
+</script>
+<script>
+const btnMenu = document.getElementById("btn-menu");
+const menu = document.getElementById("menu");
+
+btnMenu.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+});
+
 </script>
 </body>
 </html>
