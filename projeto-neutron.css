@@ -98,3 +98,146 @@
    background-color: #e12726;
 }
 
+
+/* =======================================================
+   CELULARES
+======================================================= */
+
+@media (max-width:480px){
+
+    /* GERAL */
+
+    section{
+        box-sizing:border-box;
+    }
+
+    h1{
+        font-size:1.8rem;
+        text-align:center;
+    }
+
+    h2{
+        font-size:1.5rem;
+        text-align:center;
+    }
+
+    h3{
+        font-size:1.2rem;
+        text-align:center;
+    }
+
+    p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+    /* INTRODUÇÃO */
+
+    .neutron-project-init,
+    .section-nature-lab-title{
+        display: flex;
+        background-position:center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height:75vh;
+    }
+
+    .neutron-project-container-text{
+        width: 250px;
+        margin-bottom: 25px;
+    }
+
+    .neutron-project-container-title{
+        font-size:1.15rem;
+        text-align:center;
+        width: 75%;
+
+    }
+
+    /* PROJETO */
+
+    .neutron-project{
+        display: flex;
+        background-position:center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height:100vh;
+        text-align: center;
+    }
+    .icone-section-five-title{
+      width: 125px;
+      margin-bottom: 25px;
+    }
+    .neutron-project-container-bloco{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        text-align: center;
+    }
+    .neutron-project-container-bloco-unitA,
+    .neutron-project-container-bloco-unitB{
+        border: 1px solid #E12726; 
+    }
+    .neutron-project-container-img{
+      height: 250px;
+      width: 200px;
+    }
+
+    /* FOOTER */
+
+    footer{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+
+    }
+
+    .footer-one{
+
+        width:100%;
+        margin-bottom:30px;
+
+    }
+
+    .footer-two{
+        display:flex;
+        flex-direction:column;
+        gap:30px;
+        width:100%; 
+    } 
+
+    .footer-two-bloco{
+
+        display:flex;
+        flex-direction:column;
+        gap:25px;
+
+    }
+
+    .footer-two-bloco-bloco{
+
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+
+    }
+
+    /* REDES SOCIAIS */
+
+    .section-final img{
+
+        display:block;
+        margin:0 auto;
+    }
+
+}
