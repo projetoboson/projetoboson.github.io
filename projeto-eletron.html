@@ -27,8 +27,9 @@
   <header class="header">
     <div class="header-header">
       <a href="index.html">
+
         <div class="logo-tubo">
-        <img src="./icones.img/logo-altivo-sf.png" width="90px" class="logo" title="Laboratório Altivo" alt = "Logo da escola Altivo"><br>
+        <img src="./icones.img/logo-altivo-sf.png" width="90px" class="logo" title="" alt = "Logo da escola Altivo"><br>
         <div class="container-bolhas">
         <span style="--x: -10px; --delay: 0s; --size: 8px;"></span>
         <span style="--x: 15px; --delay: 0.4s; --size: 12px;"></span>
@@ -36,13 +37,16 @@
         <span style="--x: 8px; --delay: 1.2s; --size: 10px;"></span>
     </div>
 </div>
-       <div class="small">
+        
+        <div class="small">
           <!-- <small>LABS ALT</small> -->
         </div>
       </a>
     </div>
 
-      <nav class="header-nav">
+
+
+      <nav class="header-nav" id="menu">
         <div class="header-nav-links">     
           <a href="./projeto-neutron.html" class="animado">NÊUTRON</a>
           <a href="./projeto-eletron.html" class="animado">ELÉTRON</a> 
@@ -56,6 +60,10 @@
           <a href="./area-do-estudante.html" class="btn-animado">BIOSFERA</a>
         </div>
       </nav>
+    <button id="btn-menu" class="btn-menu-mobile" aria-label="Abrir menu">
+      ☰
+    </button>
+    
   </header>
 
   
@@ -259,7 +267,7 @@
 
   </div>
   
-</footer>   
+</footer> 
 
   <script>
   window.addEventListener('load', () => {
@@ -271,6 +279,15 @@
           loader.style.display = 'none';
       }, 600);
   });
+</script>
+<script>
+const btnMenu = document.getElementById("btn-menu");
+const menu = document.getElementById("menu");
+
+btnMenu.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+});
+
 </script>
 
 </body>
