@@ -984,20 +984,19 @@ header label:hover{
 
    .section-introduction{
       background-position: center;
-
    }
 
    .title-principal,
    .title-principal-new{
       font-size: 1rem;
       justify-content: left;
-      width: 300px;
+      width: 250px;
    }
 
     .section-introduction p{
         font-size:14px;
-        line-height:100px;
-        width:60% !important;
+        line-height:20px;
+        width:70% !important;
     }
     .subtitle-section{
       font-size: 14px;
@@ -1006,5 +1005,11 @@ header label:hover{
     .h2-siga{
       display: flex;
       flex-direction: column;
+    }
+    .contact-reserva{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
     }
 }
