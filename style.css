@@ -1008,8 +1008,32 @@ header label:hover{
     }
     .contact-reserva{
       display: flex;
+      max-height: 80vh;
       justify-content: center;
       text-align: center;
-      padding: 40px 20px;
-    }
+
+   }
+   .form-reserva{
+      font-size: 12px;
+   }
+   .form-reserva label{
+      max-width: 50%;
+   }
+   .form-reserva input{
+   max-width: 40%;
+   }
+   .form-reserva textarea{
+      max-height: 20vh;
+      max-width: 50%;
+      color: #E12726;
+   }
+   .button-contact{
+      max-width: 40%;
+      padding: 0.5rem;
+      font-size: 12px;
+      margin-bottom: 25px;
+   }
+   .contact-reserva a{
+      font-size: 10px;
+   }
 }
