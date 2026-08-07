@@ -165,6 +165,7 @@
     .neutron-project{
         display: flex;
         background-position:center;
+        background-attachment: scroll;
         align-items: center;
         justify-content: center;
         flex-direction: column;
