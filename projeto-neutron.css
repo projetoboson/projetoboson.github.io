@@ -220,12 +220,10 @@
     }
 
     .footer-two-bloco-bloco{
-
         display:flex;
         flex-direction:column;
         align-items:center;
         gap:10px;
-
     }
 
     /* REDES SOCIAIS */
