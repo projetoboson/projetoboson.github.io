@@ -103,136 +103,365 @@
    CELULARES
 ======================================================= */
 
-@media (max-width:480px){
+@media (max-width: 480px){
 
-    /* GERAL */
+    /* =========================
+       GERAL
+    ========================= */
+
+    html,
+    body{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
 
     section{
-        box-sizing:border-box;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     h1{
-        font-size:1.8rem;
-        text-align:center;
+        font-size: 1.8rem;
+        text-align: center;
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
 
     h2{
-        font-size:1.5rem;
-        text-align:center;
+        font-size: 1.5rem;
+        text-align: center;
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
 
     h3{
-        font-size:1.2rem;
-        text-align:center;
+        font-size: 1.2rem;
+        text-align: center;
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
 
     p{
-        font-size:15px;
-        line-height:1.6;
+        font-size: 15px;
+        line-height: 1.6;
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
 
     img{
-        max-width:100%;
-        height:auto;
+        max-width: 100%;
+        height: auto;
     }
 
-    /* INTRODUÇÃO */
+     /* =========================
+   SEÇÃO INICIAL - NÊUTRON
+========================= */
 
-    .neutron-project-init,
-    .section-nature-lab-title{
+.neutron-project{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 100%;
+    min-height: 90vh;
+
+    padding: 80px 15px 40px;
+
+    box-sizing: border-box;
+    text-align: center;
+
+    background-position: center;
+    background-attachment: scroll;
+
+    overflow: hidden;
+}
+
+.section-nature-lab-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.icone-section-five-title{
+    display: block;
+
+    width: 110px;
+    height: auto;
+    max-width: 100%;
+
+    margin: 0 auto 25px;
+}
+
+.title-principal-new{
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    text-align: center;
+    white-space: nowrap;
+
+    font-size: min(8vw, 24px);
+    line-height: 1.1;
+    letter-spacing: 15px;
+}
+
+.subtitle-section{
+    width: 90%;
+    max-width: 100%;
+
+    margin: 18px auto 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    font-size: 0.65rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+
+    overflow-wrap: break-word;
+}
+
+.arrow_down{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 45px;
+}
+
+.arrow{
+    display: block;
+
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+}
+
+    .icone-section-five-title{
+        width: 100px;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+
+    /* =========================
+       PRIMEIRA SEÇÃO
+    ========================= */
+
+    .neutron-project-init{
         display: flex;
-        background-position:center;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        min-height:75vh;
+        min-height: 75vh;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .neutron-project-init-bloco{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+
+    /* =========================
+       CONTEÚDO DO PROJETO
+    ========================= */
+
+    .neutron-project-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .neutron-project-container-bloco{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .neutron-project-container-bloco-unitA,
+    .neutron-project-container-bloco-unitB{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        box-sizing: border-box;
+
+        border: 1px solid #E12726;
+    }
+
+
+    /* =========================
+       TÍTULOS E TEXTOS
+    ========================= */
+
+    .neutron-project-container-title{
+        font-size: 1rem;
+        text-align: center;
+        width: 90%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 
     .neutron-project-container-text{
         width: 250px;
+        max-width: 90%;
+
+        margin-left: 0;
+        margin-right: 0;
         margin-bottom: 25px;
+
+        box-sizing: border-box;
+
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 
-    .neutron-project-container-title{
-        font-size:1.15rem;
-        text-align:center;
-        width: 75%;
 
-    }
+    /* =========================
+       IMAGENS
+    ========================= */
 
-    /* PROJETO */
-
-    .neutron-project{
-        display: flex;
-        background-position:center;
-        background-attachment: scroll;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        min-height:100vh;
-        text-align: center;
-    }
-    .icone-section-five-title{
-      width: 125px;
-      margin-bottom: 25px;
-    }
-    .neutron-project-container-bloco{
-        display:flex;
-        flex-direction:column;
-        justify-content: center;
-        text-align: center;
-    }
-    .neutron-project-container-bloco-unitA,
-    .neutron-project-container-bloco-unitB{
-        border: 1px solid #E12726; 
-    }
     .neutron-project-container-img{
-      height: 250px;
-      width: 200px;
+        width: 200px;
+        height: 250px;
+        max-width: 100%;
+        object-fit: cover;
     }
 
-    /* FOOTER */
+
+    /* =========================
+       BOTÃO
+    ========================= */
+
+    .neutron-project-container-button{
+        width: 250px;
+        max-width: 85%;
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        text-align:cen
+        width: 100%;
+        max-width: 100%;
+
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     .footer-one{
-        width:100%;
-        margin-bottom:30px;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+        box-sizing: border-box;
     }
 
     .footer-two{
-        display:flex;
-        flex-direction:column;
-        gap:30px;
-        width:100%; 
-    } 
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        width: 100%;
+        max-width: 100%;
+
+        box-sizing: border-box;
+    }
 
     .footer-two-bloco{
-        display:flex;
-        flex-direction:column;
-        gap:25px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
 
+        width: 100%;
+        max-width: 100%;
+
+        box-sizing: border-box;
     }
 
     .footer-two-bloco-bloco{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
-    /* REDES SOCIAIS */
+
+    /* =========================
+       REDES SOCIAIS
+    ========================= */
+
+    .section-final{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
 
     .section-final img{
-
-        display:block;
-        margin:0 auto;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
     }
 
 }
