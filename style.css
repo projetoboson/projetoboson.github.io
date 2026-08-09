@@ -861,7 +861,7 @@ header label:hover{
   justify-content: space-between;
   align-items: center;
 }
-
+/* 
 @media (max-width:1070px){
 
    .header{
@@ -1036,4 +1036,467 @@ header label:hover{
    .contact-reserva a{
       font-size: 10px;
    }
+} */
+/* =======================================================
+   RESPONSIVIDADE — TABLET / MOBILE
+======================================================= */
+
+@media (max-width: 1070px) {
+
+    /* ================= HEADER ================= */
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 80px;
+        padding: 0 20px;
+        position: relative;
+        flex-wrap: nowrap;
+    }
+
+    .header-header {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .logo-tubo {
+         position: relative;
+        top: 10px !important;
+    }
+
+    .logo {
+        width: 60px;
+        margin-right: 0;
+    }
+
+    /* BOTÃO HAMBÚRGUER */
+
+    .btn-menu-mobile {
+        display: block;
+        margin-left: auto;
+        padding: 5px;
+        background: transparent;
+        border: none;
+        color: #ffffff;
+        font-size: 2rem;
+        line-height: 1;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* MENU ESCONDIDO */
+
+    #menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 20px;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+
+    /* MENU ABERTO */
+
+    #menu.ativo {
+        display: flex;
+    }
+
+    /* LINKS PRINCIPAIS */
+
+    .header-nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .header-nav-links a {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* REMOVE A LINHA ANIMADA DO DESKTOP */
+
+    .animado::after {
+        display: none;
+    }
+
+    /* BOTÕES DO MENU */
+
+    .header-nav-matricula {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 15px;
+        margin: 25px 0 0 0;
+    }
+
+    .header-nav-matricula a {
+        width: fit-content;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-one {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer-two {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .footer-two-bloco {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-two-bloco-bloco {
+        text-align: center;
+    }
+}
+
+/* =======================================================
+   CELULARES — PÁGINA INICIAL
+======================================================= */
+
+@media (max-width: 480px){
+
+    /* GERAL */
+
+    html,
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    section{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ===================================================
+       HEADER
+    =================================================== */
+
+    .header{
+        min-height: 80px;
+        padding: 0 15px;
+        flex-wrap: nowrap;
+    }
+
+    .header-header{
+        margin-left: 0;
+    }
+
+    .logo-tubo{
+        top: 0;
+    }
+
+    .logo{
+        width: 55px;
+        margin-right: 0;
+    }
+
+    .btn-menu-mobile{
+        display: block;
+        margin-left: auto;
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    #menu{
+        top: 100%;
+        padding: 20px;
+    }
+
+
+    /* ===================================================
+       INTRODUÇÃO / NOSSO LABORATÓRIO
+    =================================================== */
+
+    .section-laboratory{
+        min-height: 100vh;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section-introduction{
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .title-principal{
+        width: 60%;
+        font-size: 1rem;
+        letter-spacing: 3px;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    .title-log{
+        width: 22px;
+    }
+
+    .section-introduction p{
+        width: 60% !important;
+        max-width: 350px;
+        font-size: 12px;
+        line-height: 1.6;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .section-button{
+        margin-top: 25px;
+    }
+
+
+    /* ===================================================
+       COLEÇÕES ZOOLÓGICAS
+    =================================================== */
+
+    .section-invertebrates{
+        min-height: 100vh;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section-invertebrates h4,
+    .section-invertebrates p{
+        width: 100%;
+    }
+
+
+    /* ===================================================
+       PEÇAS ANATÔMICAS
+    =================================================== */
+
+    .section-anatomical-pieces{
+        min-height: 100vh;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section-anatomical-pieces p{
+        width: 100%;
+    }
+
+
+    /* ===================================================
+       FORMAÇÃO DA VIDA
+    =================================================== */
+
+    .section-fetuses{
+        min-height: 100vh;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section-fetuses p{
+        width: 100%;
+    }
+
+
+    /* ===================================================
+       SETA
+    =================================================== */
+
+    .arrow_down{
+        bottom: 20px;
+    }
+
+
+    /* ===================================================
+       SIGA O ALTIVO
+    =================================================== */
+
+    .section-final{
+        min-height: 30vh;
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .section-final h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .h2-siga{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .section-final img{
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+
+    /* ===================================================
+       FOOTER
+    =================================================== */
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-one{
+        width: 100%;
+        min-width: 100%;
+        min-height: auto;
+        margin-bottom: 30px;
+        padding: 30px 15px;
+    }
+
+    .footer-two{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 100%;
+        min-height: auto;
+        gap: 35px;
+        padding: 30px 15px;
+    }
+
+    .footer-two-bloco{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .footer-two-bloco-bloco{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .footer-two a{
+        font-size: 13px;
+    }
+
+    .footer-two h5{
+        font-size: 14px;
+    }
+
+
+    /* ===================================================
+       CREDENCIAIS
+    =================================================== */
+
+    .credenciais{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        padding: 20px;
+    }
+
+
+    /* ===================================================
+       FORMULÁRIO DE CONTATO
+    =================================================== */
+
+    .contact-reserva{
+        min-height: 100vh;
+        max-height: none;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .title-contact{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .form-reserva{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .form-reserva label{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .form-reserva input,
+    .form-reserva textarea{
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .form-reserva input{
+        margin-bottom: 20px;
+    }
+
+    .form-reserva textarea{
+        min-height: 100px;
+        max-height: none;
+    }
+
+    .button-contact{
+        width: 80%;
+        max-width: 300px;
+        padding: 0.75rem;
+        font-size: 11px;
+        margin-bottom: 25px;
+    }
+
+    .contact-reserva a{
+        font-size: 10px;
+    }
 }
