@@ -563,6 +563,8 @@
         text-align: center;
 
         overflow: hidden;
+
+        border-right: none;
     }
 
 
@@ -586,6 +588,7 @@
         background-repeat: no-repeat;
 
         box-sizing: border-box;
+        border-right: none;
     }
 
 
