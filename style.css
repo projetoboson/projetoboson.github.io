@@ -544,9 +544,11 @@ footer{
    align-items: center;
    justify-content: center;
    flex-direction: column;
+   text-align: center;
 }
 .footer-one img{
    margin-bottom: 20px;
+   margin-top: 25px;
    width: 150px;
 }
 .footer-two{
@@ -607,6 +609,13 @@ footer a{
 .footer-one-init a{
    font-weight: 400;
 } 
+.animadoFooter{
+    font-weight: 600;
+    color:#f5f5f5;
+}
+.animadoFooter:hover{
+    color:#E12726
+}
 .title-principal{
    color: rgb(220,220,230);
    font-family: "Michroma", sans-serif;
@@ -819,6 +828,7 @@ header label:hover{
    border: transparent;
    border-bottom: 2px solid #868686;
    margin-top: 30px;
+   color: #E12726;
 }
 
 .form-reserva label{
@@ -889,7 +899,431 @@ header label:hover{
   justify-content: space-between;
   align-items: center;
 }
+/* =========================================
+   FEIRA DE CIÊNCIAS
+========================================= */
 
+.feira-dados {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            ellipse at center 70%,
+            #2c2c2c 0%,
+            #202020 30%,
+            #0d0d0d 65%,
+            #000 100%
+        ),
+        linear-gradient(
+            to bottom,
+            #000 0%,
+            #111 35%,
+            #2a2a2a 75%,
+            #111 100%
+        );
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    border-bottom: 1px red solid;
+
+}
+
+
+/* =========================================
+   CONTEÚDO PRINCIPAL
+========================================= */
+
+.feira-dados-conteudo {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.feira-dados h2 {
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    margin-top: 80px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 8px;
+    line-height: 1.8;
+    text-align: center;
+    color: #fff;
+    width: 70%;
+}
+/* =========================================
+   ÓRBITAS
+========================================= */
+.feira-orbitas {
+    position: relative;
+    width: 850px;
+    height: 850px;
+    /*
+       Centraliza o container exatamente
+       dentro do conteúdo principal
+    */
+    margin: -20px auto 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-shrink: 1;
+    box-sizing: border-box;
+}
+/* =========================================
+   ÓRBITAS DECORATIVAS
+========================================= */
+.orbita {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1.5px dashed #f5f5f5 ;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+/* ÓRBITA EXTERNA */
+
+.orbita-1 {
+    width: 1500px;
+    height: 1500px;
+}
+
+/* ÓRBITA INTERMEDIÁRIA */
+
+.orbita-2 {
+    width: 1000px;
+    height: 1000px;
+}
+
+/* ÓRBITA INTERNA */
+
+.orbita-3 {
+    width: 500px;
+    height: 500px;
+}
+
+
+/* =========================================
+   INDICADORES
+========================================= */
+
+.feira-indicador {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+
+/*
+   IMPORTANTE:
+   Não usamos mais top, left ou transform
+   individualmente nos indicadores.
+*/
+
+.indicador-1,
+.indicador-2,
+.indicador-3 {
+    top: auto;
+    left: auto;
+    transform: none;
+}
+
+
+/* =========================================
+   CAIXAS DOS NÚMEROS
+========================================= */
+
+.numero-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* CADA QUADRADO */
+
+.numero-boxes span {
+    width: 60px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #777;
+    border-radius: 6px;
+    font-family: "Michroma", sans-serif;
+    font-size: 28px;
+    font-weight: 200;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.015);
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+/* =========================================
+   HOVER
+========================================= */
+.numero-boxes span:hover {
+    border-color: #e00000;
+    background: rgba(255, 0, 0, 0.04);
+}
+
+
+/* =========================================
+   TEXTOS DOS INDICADORES
+========================================= */
+
+.feira-indicador p {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    color: #fff;
+    width: 400px;
+}
+
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .feira-dados {
+        padding: 20px;
+    }
+    .feira-dados-conteudo {
+        max-width: 100%;
+    }
+    .feira-dados h2 {
+        font-size: 20px;
+        letter-spacing: 6px;
+        transform: translateY(30px);
+    }
+    .feira-orbitas {
+        width: 700px;
+        height: 700px;
+        margin-top: -10px;
+        gap: 25px;
+    }
+
+    /* ÓRBITAS */
+    .orbita-1 {
+        width: 600px;
+        height: 600px;
+    }
+    .orbita-2 {
+        width: 400px;
+        height: 400px;
+    }
+    .orbita-3 {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    /* NÚMEROS */
+    .numero-boxes {
+        gap: 5px;
+    }
+    .numero-boxes span {
+        width: 65px;
+        height: 70px;
+        font-size: 30px;
+    }
+    /* TEXTOS */
+    .feira-indicador p {
+        margin-top: 20px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+/* =========================================
+   CELULARES GRANDES
+========================================= */
+
+@media (max-width: 600px) {
+
+    .feira-dados {
+        height: 100vh;
+        min-height: 100vh;
+        padding: 15px;
+    }
+
+    .feira-dados-conteudo {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* TÍTULO */
+    .feira-dados h2 {
+        font-size: 16px;
+        letter-spacing: 3px;
+        line-height: 1.6;
+
+        transform: translateY(20px);
+    }
+
+
+    /* CONTAINER DAS ÓRBITAS */
+
+    .feira-orbitas {
+        width: 100%;
+        height: 650px;
+        margin-top: 0;
+        gap: 8px;
+    }
+
+
+    /* ÓRBITAS */
+    .orbita-1 {
+        width: 600px;
+        height: 600px;
+    }
+    .orbita-2 {
+        width: 400px;
+        height: 400px;
+    }
+    .orbita-3 {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    /* INDICADORES */
+
+    .feira-indicador {
+        transform: scale(0.78);
+    }
+
+
+    /* NÚMEROS */
+
+    .numero-boxes {
+        gap: 7px;
+    }
+
+
+    .numero-boxes span {
+        width: 55px;
+        height: 65px;
+
+        font-size: 24px;
+    }
+
+
+    /* TEXTOS */
+
+    .feira-indicador p {
+        margin-top: 15px;
+
+        font-size: 12px;
+        line-height: 1.6;
+
+        letter-spacing: 0.5px;
+    }
+}
+
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 440px) {
+
+    .feira-dados {
+        display: flex;
+        padding: 10px;
+    }
+    .feira-orbitas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* TÍTULO */
+    .feira-dados h2 {
+        font-size: 14px;
+        font-weight: 100;
+        width: 90%;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+        transform: translateY(15px);
+    }
+
+    /* ÓRBITAS */
+    .feira-orbitas {
+        height: 600px;
+        gap: 4px;
+    }
+
+    .orbita-1 {
+        width: 350px;
+        height: 350px;
+    }
+    .orbita-2 {
+        width: 250px;
+        height: 250px;
+    }
+    .orbita-3 {
+        width: 125px;
+        height: 125px;
+    }
+
+
+    /* INDICADORES */
+    .feira-indicador {
+        transform: scale(0.68);
+    }
+    /* NÚMEROS */
+    .numero-boxes {
+        gap: 10px;
+    }
+    .numero-boxes span {
+        width: 75px;
+        height: 100px;
+        font-size: 38px;
+    }
+    /* TEXTOS */
+    .feira-indicador p {
+        margin-top: 12px;
+        font-size: 22px;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+    }
+}
 /* 
 @media (max-width:1070px){
 
