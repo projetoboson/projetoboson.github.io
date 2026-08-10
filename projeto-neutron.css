@@ -335,6 +335,8 @@
         box-sizing: border-box;
 
         border: 1px solid #E12726;
+        border-right: none;
+
     }
 
 
@@ -350,6 +352,8 @@
         box-sizing: border-box;
         overflow-wrap: break-word;
         word-wrap: break-word;
+
+
     }
 
     .neutron-project-container-text{
@@ -364,6 +368,9 @@
 
         overflow-wrap: break-word;
         word-wrap: break-word;
+
+        border-right: none;
+
     }
 
 
