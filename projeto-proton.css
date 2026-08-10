@@ -23,8 +23,7 @@
 }
 .proton-project-blocoA{
    display: flex;
-   background-color: #000000;
-   min-width: 50%;
+    background-color: #000000;   min-width: 50%;
    align-items: flex-start;
    padding-left: 80px;
    justify-content: center;
@@ -95,9 +94,9 @@
    background-image: url(./imagens.img/quimica-lab/IMG_4913.png);
    background-repeat: no-repeat;
    background-size: cover;
+   background-position: center;
    min-width: 50%;
    background-position: bottom;
-   
    border-right: solid 2px #e12726;
    border-bottom: 2px solid #e12726;
 }
