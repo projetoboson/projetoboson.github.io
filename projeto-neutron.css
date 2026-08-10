@@ -336,6 +336,7 @@
 
         border: 1px solid #E12726;
         border-right: none;
+        border-left: none;
 
     }
 
@@ -370,6 +371,7 @@
         word-wrap: break-word;
 
         border-right: none;
+        border-left: none;
 
     }
 
