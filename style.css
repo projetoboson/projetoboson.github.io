@@ -1261,7 +1261,7 @@ header label:hover{
    CELULARES PEQUENOS
 ========================================= */
 
-@media (max-width: 440px) {
+@media (max-width: 768px) {
 
     .feira-dados {
         min-height: 100vh;
@@ -1654,22 +1654,18 @@ header label:hover{
 /* =======================================================
    CELULARES — PÁGINA INICIAL
 ======================================================= */
-
 @media (max-width: 480px){
 
     /* GERAL */
-
     html,
     body{
         width: 100%;
         overflow-x: hidden;
     }
-
     section{
         box-sizing: border-box;
         width: 100%;
     }
-
     img{
         max-width: 100%;
         height: auto;
@@ -1678,33 +1674,27 @@ header label:hover{
     /* ===================================================
        HEADER
     =================================================== */
-
     .header{
         min-height: 80px;
         padding: 0 15px;
         flex-wrap: nowrap;
     }
-
     .header-header{
         margin-left: 0;
     }
-
     .logo-tubo{
         top: 0;
     }
-
     .logo{
         width: 55px;
         margin-right: 0;
     }
-
     .btn-menu-mobile{
         display: block;
         margin-left: auto;
         color: #fff;
         font-size: 2rem;
     }
-
     #menu{
         top: 100%;
         padding: 20px;
@@ -1714,7 +1704,6 @@ header label:hover{
     /* ===================================================
        INTRODUÇÃO / NOSSO LABORATÓRIO
     =================================================== */
-
     .section-laboratory{
         min-height: 100vh;
         background-position: center;
@@ -1728,15 +1717,12 @@ header label:hover{
         max-width: 100%;
         margin-left: 0;
         padding: 0 20px;
-
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-
         text-align: center;
     }
-
     .title-principal{
         width: 60%;
         font-size: 1rem;
@@ -1744,11 +1730,9 @@ header label:hover{
         text-align: left;
         margin-bottom: 25px;
     }
-
     .title-log{
         width: 22px;
     }
-
     .section-introduction p{
         width: 60% !important;
         max-width: 350px;
@@ -1757,7 +1741,6 @@ header label:hover{
         text-align: left;
         font-weight: 500;
     }
-
     .section-button{
         margin-top: 25px;
     }
@@ -1766,7 +1749,6 @@ header label:hover{
     /* ===================================================
        COLEÇÕES ZOOLÓGICAS
     =================================================== */
-
     .section-invertebrates{
         min-height: 100vh;
         background-position: center;
@@ -1774,7 +1756,6 @@ header label:hover{
         justify-content: center;
         text-align: center;
     }
-
     .section-invertebrates h4,
     .section-invertebrates p{
         width: 100%;
@@ -1784,7 +1765,6 @@ header label:hover{
     /* ===================================================
        PEÇAS ANATÔMICAS
     =================================================== */
-
     .section-anatomical-pieces{
         min-height: 100vh;
         background-position: center;
@@ -1792,7 +1772,6 @@ header label:hover{
         justify-content: center;
         text-align: center;
     }
-
     .section-anatomical-pieces p{
         width: 100%;
     }
@@ -1801,7 +1780,6 @@ header label:hover{
     /* ===================================================
        FORMAÇÃO DA VIDA
     =================================================== */
-
     .section-fetuses{
         min-height: 100vh;
         background-position: center;
@@ -1809,7 +1787,6 @@ header label:hover{
         justify-content: center;
         text-align: center;
     }
-
     .section-fetuses p{
         width: 100%;
     }
@@ -1818,7 +1795,6 @@ header label:hover{
     /* ===================================================
        SETA
     =================================================== */
-
     .arrow_down{
         bottom: 20px;
     }
@@ -1827,7 +1803,6 @@ header label:hover{
     /* ===================================================
        SIGA O ALTIVO
     =================================================== */
-
     .section-final{
         min-height: 30vh;
         padding: 30px 15px;
@@ -1852,61 +1827,7 @@ header label:hover{
         margin: 0 5px;
     }
 
-
-    /* ===================================================
-       FOOTER
-    =================================================== */
-
-    /* footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    .footer-one{
-        width: 100%;
-        min-width: 100%;
-        min-height: auto;
-        margin-bottom: 30px;
-        padding: 30px 15px;
-    }
-
-    .footer-two{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        min-width: 100%;
-        min-height: auto;
-        gap: 35px;
-        padding: 30px 15px;
-    }
-
-    .footer-two-bloco{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 30px;
-    }
-
-    .footer-two-bloco-bloco{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
-    }
-
-    .footer-two a{
-        font-size: 13px;
-    }
-
-    .footer-two h5{
-        font-size: 14px;
-    } */
-
-@media (max-width:480px){
+    @media (max-width: 768px){
 
     footer{
         min-height: auto;
