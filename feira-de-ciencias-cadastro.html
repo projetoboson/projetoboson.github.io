@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Experimento | Feira de Ciências 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto+Condensed:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./feira-de-ciencias-cadastro.css">
+</head>
+
+<body>
+
+    <main class="cadastro">
+
+        <section class="cadastro-header">
+
+            <div class="cadastro-header-conteudo">
+
+                <span class="cadastro-tag">
+                    FEIRA DE CIÊNCIAS 2026
+                </span>
+
+                <h1>CADASTRO DE EXPERIMENTO</h1>
+
+                <p>
+                    Registre seu projeto científico e faça parte da Feira de Ciências.
+                    Preencha as informações abaixo para cadastrar sua proposta.
+                </p>
+
+            </div>
+
+            <div class="cadastro-header-linha"></div>
+
+        </section>
+
+        <section class="cadastro-formulario">
+
+            <form action="#" method="post">
+
+                <!-- IDENTIFICAÇÃO -->
+
+                <div class="formulario-secao">
+
+                    <div class="formulario-secao-titulo">
+                        <span>01</span>
+                        <h2>IDENTIFICAÇÃO DO PROJETO</h2>
+                    </div>
+
+                    <div class="campo campo-full">
+
+                        <label for="titulo">
+                            TÍTULO DO EXPERIMENTO
+                        </label>
+
+                        <input
+                            type="text"
+                            id="titulo"
+                            name="titulo"
+                            placeholder="Digite o título do experimento"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo-grid">
+
+                        <div class="campo">
+
+                            <label for="area">
+                                ÁREA DE CONHECIMENTO
+                            </label>
+
+                            <select id="area" name="area" required>
+
+                                <option value="" selected disabled>
+                                    Selecione uma área
+                                </option>
+
+                                <option value="biologia">Biologia</option>
+                                <option value="quimica">Química</option>
+                                <option value="fisica">Física</option>
+                                <option value="ciencias-naturais">
+                                    Ciências Naturais
+                                </option>
+                                <option value="tecnologia">Tecnologia</option>
+                                <option value="meio-ambiente">
+                                    Meio Ambiente
+                                </option>
+                                <option value="interdisciplinar">
+                                    Interdisciplinar
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="categoria">
+                                CATEGORIA
+                            </label>
+
+                            <select id="categoria" name="categoria" required>
+
+                                <option value="" selected disabled>
+                                    Selecione uma categoria
+                                </option>
+
+                                <option value="experimental">
+                                    Experimental
+                                </option>
+
+                                <option value="investigacao">
+                                    Investigação Científica
+                                </option>
+
+                                <option value="tecnologico">
+                                    Desenvolvimento Tecnológico
+                                </option>
+
+                                <option value="ambiental">
+                                    Sustentabilidade
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PARTICIPANTES -->
+
+                <div class="formulario-secao">
+
+                    <div class="formulario-secao-titulo">
+                        <span>02</span>
+                        <h2>PARTICIPANTES</h2>
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="responsavel">
+                            PROFESSOR RESPONSÁVEL
+                        </label>
+
+                        <input
+                            type="text"
+                            id="responsavel"
+                            name="responsavel"
+                            placeholder="Nome completo do professor responsável"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo-grid">
+
+                        <div class="campo">
+
+                            <label for="aluno1">
+                                ESTUDANTE 01
+                            </label>
+
+                            <input
+                                type="text"
+                                id="aluno1"
+                                name="aluno1"
+                                placeholder="Nome completo"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="turma">
+                                TURMA
+                            </label>
+
+                            <input
+                                type="text"
+                                id="turma"
+                                name="turma"
+                                placeholder="Ex.: 8º ano"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo-grid">
+
+                        <div class="campo">
+
+                            <label for="aluno2">
+                                ESTUDANTE 02
+                            </label>
+
+                            <input
+                                type="text"
+                                id="aluno2"
+                                name="aluno2"
+                                placeholder="Nome completo"
+                            >
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="aluno3">
+                                ESTUDANTE 03
+                            </label>
+
+                            <input
+                                type="text"
+                                id="aluno3"
+                                name="aluno3"
+                                placeholder="Nome completo"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXPERIMENTO -->
+
+                <div class="formulario-secao">
+
+                    <div class="formulario-secao-titulo">
+                        <span>03</span>
+                        <h2>SOBRE O EXPERIMENTO</h2>
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="problema">
+                            PROBLEMA / PERGUNTA DE INVESTIGAÇÃO
+                        </label>
+
+                        <textarea
+                            id="problema"
+                            name="problema"
+                            rows="4"
+                            placeholder="Qual problema científico o projeto pretende investigar?"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="hipotese">
+                            HIPÓTESE
+                        </label>
+
+                        <textarea
+                            id="hipotese"
+                            name="hipotese"
+                            rows="4"
+                            placeholder="Qual é a hipótese levantada pelo grupo?"
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="objetivos">
+                            OBJETIVOS
+                        </label>
+
+                        <textarea
+                            id="objetivos"
+                            name="objetivos"
+                            rows="5"
+                            placeholder="Descreva os principais objetivos do experimento."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="metodologia">
+                            METODOLOGIA
+                        </label>
+
+                        <textarea
+                            id="metodologia"
+                            name="metodologia"
+                            rows="6"
+                            placeholder="Descreva como o experimento será realizado."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="resultados">
+                            RESULTADOS ESPERADOS
+                        </label>
+
+                        <textarea
+                            id="resultados"
+                            name="resultados"
+                            rows="5"
+                            placeholder="Descreva os resultados esperados."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MATERIAIS -->
+
+                <div class="formulario-secao">
+
+                    <div class="formulario-secao-titulo">
+                        <span>04</span>
+                        <h2>MATERIAIS E SEGURANÇA</h2>
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="materiais">
+                            MATERIAIS NECESSÁRIOS
+                        </label>
+
+                        <textarea
+                            id="materiais"
+                            name="materiais"
+                            rows="5"
+                            placeholder="Liste os materiais, equipamentos e reagentes utilizados."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="riscos">
+                            RISCOS E PROCEDIMENTOS DE SEGURANÇA
+                        </label>
+
+                        <textarea
+                            id="riscos"
+                            name="riscos"
+                            rows="5"
+                            placeholder="Informe possíveis riscos e os procedimentos necessários para segurança."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- APRESENTAÇÃO -->
+
+                <div class="formulario-secao">
+
+                    <div class="formulario-secao-titulo">
+                        <span>05</span>
+                        <h2>APRESENTAÇÃO</h2>
+                    </div>
+
+
+                    <div class="campo-grid">
+
+                        <div class="campo">
+
+                            <label for="necessidade">
+                                NECESSITA DE ENERGIA?
+                            </label>
+
+                            <select id="necessidade" name="necessidade">
+
+                                <option value="nao">Não</option>
+                                <option value="sim">Sim</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="espaco">
+                                NECESSITA DE ESPAÇO ESPECIAL?
+                            </label>
+
+                            <select id="espaco" name="espaco">
+
+                                <option value="nao">Não</option>
+                                <option value="sim">Sim</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="observacoes">
+                            OBSERVAÇÕES
+                        </label>
+
+                        <textarea
+                            id="observacoes"
+                            name="observacoes"
+                            rows="4"
+                            placeholder="Informe outras necessidades para a apresentação."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONFIRMAÇÃO -->
+
+                <div class="formulario-confirmacao">
+
+                    <label class="checkbox">
+
+                        <input
+                            type="checkbox"
+                            name="confirmacao"
+                            required
+                        >
+
+                        <span>
+                            Confirmo que as informações fornecidas são verdadeiras
+                            e que o projeto será desenvolvido de acordo com as
+                            orientações de segurança da Feira de Ciências.
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- BOTÕES -->
+
+                <div class="formulario-acoes">
+
+                    <button
+                        type="submit"
+                        class="btn-cadastrar"
+                    >
+                        CADASTRAR EXPERIMENTO
+                    </button>
+
+                    <a
+                        href="./"
+                        class="btn-voltar"
+                    >
+                        VOLTAR
+                    </a>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
