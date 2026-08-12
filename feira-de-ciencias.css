@@ -3,17 +3,33 @@
    min-height: 85vh; 
    gap: 50px 0px;
    display: flex;
-   justify-content: center;
+   justify-content: space-evenly;
    align-items: center;
    background-color: #000000;
    border-bottom: 1px #e12726 solid;   
 }
+
 .capa-galeria-feiras-animacao{
    display: flex;
 }
-.capa-galeria-feiras-title{
+.capa-galeria-feiras-titulo{
    justify-content: left;
-   margin-left: 25px;
+   margin-left: 50px;
+}
+.title-principal-new-feira{
+   display: flex;
+   text-align: left;
+   font-family: "Michroma", sans-serif;
+   font-size: 36px;
+   letter-spacing: 5px;
+   color: #ffffff;
+   margin-bottom: 50px;
+   width: 750px;
+}
+.paragrafo-principal-new-feira{
+   width: 350px;
+   font-family: "Roboto Condensed", sans-serif;
+   margin-bottom: 15px;
 }
 
 .galeria-feiras-geral{
@@ -26,7 +42,32 @@
    justify-content: center;
    align-items: end;
 }
-
+.capa-galeria-feira-informacao{
+   display: flex;
+   gap: 0px 50px;
+}
+.section-button-feira{
+   display: flex;
+   width: 250px;
+   gap: 0px 10px;
+   align-items: center;
+   padding: 1rem 1.25rem 1rem 1.25rem;
+   color: rgb(220,220,230);
+   background-color: transparent;
+   margin-top: 30px;
+   cursor: pointer;
+   font-family: "Roboto Condensed", sans-serif;
+   font-size: 12px;
+   font-weight: 500;
+   border-radius: 5px;
+   border-color: #E12726;
+}
+.section-button-feira:hover{
+   background-color: #e12726;
+}
+.section-button-feira a{
+   display: flex;
+}
 .galeria-feiras{
    display: grid;
    padding: 10rem 10rem 10rem 10rem;
@@ -110,27 +151,229 @@
 ;
 }
 
+@media (max-width: 480px){
 
-/* RESET BÁSICO */
+    /* =========================================
+       CAPA — FEIRA DE CIÊNCIAS
+    ========================================= */
 
-.orbita{
-    position: absolute;
-    border: 1px dashed rgba(255,255,255,0.2);
-    border-radius: 50%;
-    pointer-events: none;
-}
+    .capa-galeria-feiras{
+        width: 100%;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 80px 20px 50px;
+        box-sizing: border-box;
+        text-align: center;
+        overflow: hidden;
+    }
 
-.orbita-1{
-    width: 400px;
-    height: 400px;
-}
 
-.orbita-2{
-    width: 800px;
-    height: 800px;
-}
+    /* =========================================
+       TÍTULO E DESCRIÇÃO
+    ========================================= */
 
-.orbita-3{
-    width: 1200px;
-    height: 1200px;
+    .capa-galeria-feiras-titulo{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+
+    .title-principal-new-feira{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 25px;
+        padding: 0;
+        display: block;
+        font-family: "Michroma", sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        letter-spacing: 2px;
+        color: #ffffff;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+
+    .paragrafo-principal-new-feira{
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto 25px;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #f4f4f5;
+        text-align: center;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+
+    /* =========================================
+       BOTÕES
+    ========================================= */
+
+    .capa-galeria-feira-informacao{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+
+    .capa-galeria-feira-informacao > div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .section-button-feira{
+        width: 100%;
+        max-width: 280px;
+        min-width: 225px;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        margin-top: 15px;
+        padding: 0.9rem 1rem;
+        color: rgb(220,220,230);
+        background-color: transparent;
+        border: 1px solid #e12726;
+        border-radius: 5px;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        cursor: pointer;
+    }
+
+
+    /* =========================================
+       IMAGEM / ANIMAÇÃO
+    ========================================= */
+
+    .capa-galeria-feiras-animacao{
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+
+    .capa-galeria-feiras-animacao img{
+        display: block;
+        width: 180px;
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    /* =========================================
+       GALERIA
+    ========================================= */
+
+    .galeria-feiras-geral{
+        width: 100%;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px;
+        box-sizing: border-box;
+        background-color: #000000;
+    }
+
+
+    .galeria-feiras{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 50px 20px;
+        box-sizing: border-box;
+        justify-items: center;
+        background-color: #000000;
+    }
+
+
+    /* =========================================
+       FOTOS DA GALERIA
+    ========================================= */
+
+    .galeria-feiras-foto{
+        width: 100%;
+        max-width: 340px;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+
+    .galeria-feiras img{
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        aspect-ratio: 340 / 200;
+        object-fit: cover;
+        box-sizing: border-box;
+    }
+
+
+    .galeria-feiras-texto{
+        width: 100%;
+        margin-top: 15px;
+        color: #f4f4f5;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+
+    .galeria-feiras-foto h3{
+        font-size: 14px;
+        line-height: 1.4;
+        letter-spacing: 1px;
+        margin-top: 10px;
+    }
+
+
+    .galeria-feiras-foto h4{
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 8px;
+    }
+
+
+    .galeria-feiras .galeria-feiras-btn{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.9rem;
+        border: 2px solid #e12726;
+        background-color: transparent;
+        color: #f4f4f5;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 12px;
+        cursor: pointer;
+    }
 }
