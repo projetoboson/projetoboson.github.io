@@ -47,11 +47,7 @@
       </a>
     </div>
 
-    <!--<button class="menu-toggle" aria-label="Abrir menu">
-      ☰
-    </button>-->
-
-      <nav class="header-nav">
+    <nav class="header-nav" id="menu">
         <div class="header-nav-links">     
           <a href="./projeto-neutron.html" class="animado">NÊUTRON</a>
           <a href="./projeto-eletron.html" class="animado">ELÉTRON</a> 
@@ -64,18 +60,21 @@
           <a href="./data-base.html" class="btn-animado">BANCO DE DADOS</a>
           <a href="./area-do-estudante.html" class="btn-animado">BIOSFERA</a>
         </div>
-      </nav>
+    </nav>
+    <button id="btn-menu" class="btn-menu-mobile" aria-label="Abrir menu">
+      ☰
+    </button>
   </header>
 
   <main>
     <section class="sectionAnatomy">
-        <div class="vision-planner"> 
+        <!-- <div class="vision-planner"> 
           <button id="modo-fonte">Aumentar fonte</button>
           <button id="modo-fonteComum">Diminuir fonte</button>
           <button id="modo-fonte">Aumentar contrase</button>
           <button id="modo-fonteComum">Descrição de imagem</button>
           <button id="modo-fonte">Leitura por voz</button>
-        </div>
+        </div> -->
 
       <div class="sectionAnatomyTitle">
          <h1 class="sectionAnatomyTitleH1">MODELOS ANATÔMICOS</h1>         
@@ -123,13 +122,15 @@
         
           <div class="AnatomyDivB">
             <img src="./icones.img/img-icone-esqueleto.png" class="iconeEsqueleto">
-          </div>
+           <button class="buttonAnatomy">DESMEMBRAR</button>
+          </div> 
     </section>
 
     <section class="sectionAnatomicalPieces">
-        <h1 class="sectionAnatomyPiecesTitle">EM DESENVOLVIMENTO</h1>
-        <p class="sectionAnatomyPiecesText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit porro alias vitae possimus sit nemo voluptatum ducimus 
-          nostrum ab exercitationem laboriosam laudantium, maiores veritatis ut facere modi dolores molestiae fugiat.</p>
+        <h1 class="sectionAnatomyPiecesTitle">UM ACERVO EM CONSTRUÇÃO</h1>
+        <p class="sectionAnatomyPiecesText"> Nosso acervo de modelos anatômicos está em constante desenvolvimento.
+      Cada nova peça amplia as possibilidades de estudo, permitindo que os
+      estudantes explorem a anatomia humana de forma visual, prática e interativa.</p>
         <button class="buttonAnatomy">MAIS INFORMAÇÕES</button>
     </section>
 
@@ -138,12 +139,16 @@
       <div class="sectionPiecesNewG">
         <div class="sectionPiecesNewBa"></div>
         <div class="sectionPiecesNewT">
-          <h3 class="tituloH3">TÍTULO PROVISÓRIO</h3>
-          <p class="blocoIntroductionParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quibusdam, optio corrupti iste ex eligendi. Eaque, ut 
-            itaque. Illum dolor quos ab quasi corporis quaerat ex libero quas recusandae pariatur. Lorem ipsum dolor sit amet consectetur
-             adipisicing elit. Dignissimos quod facere eum iste facilis harum culpa voluptates maiores dicta.</p>
-          <p class="blocoIntroductionParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ducimus inventore dolorum autem deleniti eaque error sit, 
-            a aperiam voluptatem provident, commodi quas explicabo cum magni beatae sunt totam excepturi.</p>
+          <h3 class="tituloH3">ANATOMIA EM DETALHES</h3>
+
+          <p class="blocoIntroductionParagraph">Os modelos anatômicos permitem observar estruturas do corpo humano
+        de forma ampliada e detalhada. Ossos, músculos, órgãos e sistemas
+        podem ser explorados além das imagens presentes nos livros.</p>
+          
+             <p class="blocoIntroductionParagraph"> A observação direta torna o aprendizado mais visual e significativo,
+        ajudando os estudantes a compreenderem como as diferentes estruturas
+        do organismo se organizam e funcionam em conjunto.</p>
+
           <button class="buttonAnatomy">MAIS INFORMAÇÕES</button>
         </div>
       </div>
@@ -151,12 +156,16 @@
 
       <div class="sectionPiecesNewG">
         <div class="sectionPiecesNewT">
-          <h3 class="tituloH3">TÍTULO PROVISÓRIO</h3>
-          <p class="blocoIntroductionParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quibusdam, optio corrupti iste ex eligendi. Eaque, ut 
-            itaque. Illum dolor quos ab quasi corporis quaerat ex libero quas recusandae pariatur. Lorem ipsum dolor sit amet consectetur
-             adipisicing elit. Dignissimos quod facere eum iste facilis harum culpa voluptates maiores dicta.</p>
-          <p class="blocoIntroductionParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ducimus inventore dolorum autem deleniti eaque error sit, 
-            a aperiam voluptatem provident, commodi quas explicabo cum magni beatae sunt totam excepturi.</p>
+          <h3 class="tituloH3">APRENDER OBSERVANDO</h3>
+
+          <p class="blocoIntroductionParagraph">  A ciência também se constrói pela observação. Por meio das peças
+            anatômicas, os estudantes podem investigar formas, estruturas,ndimensões e relações entre os diferentes 
+            sistemas do corpo humano.</p>
+          
+          <p class="blocoIntroductionParagraph">Cada modelo se transforma em uma ferramenta de investigação,
+            aproximando a teoria da prática e tornando o estudo da anatomia uma experiência mais concreta, curiosa 
+            e investigativa.</p>
+
           <button class="buttonAnatomy">MAIS INFORMAÇÕES</button>
         </div>
           <div class="sectionPiecesNewBb"></div>
@@ -182,11 +191,16 @@
 
 <footer>
   <div class="footer-one">
-    <a href="https://sites.google.com/view/escolaaltivo/home"><img src="./icones.img/icone-escola.png" style="height: 150px;"></a>
-    <h3><a href="https://sites.google.com/view/escolaaltivo/home">© 2026 Escola Altivo 2026</a></h3>
-    <div class="footer-one-init">
+    <h3><a href=""class="animadoFooter">CONTATO</a></h3> 
+    <a href="https://sites.google.com/view/escolaaltivo/home"><img src="./icones.img/icone-principal.png"></a>
+    <div> 
+      <h3><a href=""class="animado">LGPD</a></h3> 
       <h3><a href=""class="animado">Políticas de Privacidade</a></h3>
-      <h3><a href=""class="animado">Termos de Uso</a></h3>
+      <h3><a href=""class="animado">Termos de Uso</a></h3> 
+    </div>
+    <div class="footer-one-init">
+   
+      <h3><a href="https://sites.google.com/view/escolaaltivo/home">© 2026 Escola Altivo</a></h3>
     </div>
   </div>
 
@@ -273,7 +287,34 @@
 
   </div>
   
-</footer> 
+</footer>  
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<script>
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+
+    loader.style.opacity = '0';
+
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 600);
+});
+</script>
+
+<script>
+const btnMenu = document.getElementById("btn-menu");
+const menu = document.getElementById("menu");
+
+btnMenu.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+});
+
+</script>
 
 </body>
 </html>
