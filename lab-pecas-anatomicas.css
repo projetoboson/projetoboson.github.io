@@ -74,6 +74,7 @@
    display: flex;   
    justify-content: center;
    align-items: center;
+   flex-direction: column;
    min-width: 50%;
    border-left: 1px red solid;
 }
@@ -215,4 +216,921 @@
 
    min-width: 50%;
    border-right: 1px red solid;
+}
+
+/* =========================================================
+   RESPONSIVIDADE
+   MODELOS ANATÔMICOS - PROJETO BOSON
+========================================================= */
+
+
+/* =========================================================
+   TABLETS
+   769px ATÉ 1024px
+========================================================= */
+
+@media (max-width: 1024px){
+
+    /* =========================
+       GERAL
+    ========================= */
+
+    html,
+    body{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    section{
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       CAPA
+    ========================= */
+
+    .sectionAnatomy{
+        min-height: 100vh;
+        padding: 80px 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sectionAnatomyTitle{
+        width: 100%;
+        max-width: 900px;
+
+        text-align: center;
+    }
+
+    .sectionAnatomyTitleH1{
+        width: 100%;
+
+        font-size: 38px;
+
+        letter-spacing: 4px;
+
+        text-align: center;
+    }
+
+    .sectionAnatomyTitleP{
+        width: 100%;
+
+        font-size: 16px;
+
+        text-align: center;
+    }
+
+
+    /* =========================
+       INTRODUÇÃO
+    ========================= */
+
+    .sectionAnatomyIntrod{
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        box-sizing: border-box;
+    }
+
+    .AnatomyDivA,
+    .AnatomyDivB{
+        width: 50%;
+        min-width: 0;
+
+        box-sizing: border-box;
+    }
+
+    .AnatomyDivA{
+        padding: 60px 40px;
+    }
+
+    .AnatomyDivB{
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 40px;
+    }
+
+    .anatomyText{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .titleAnatomy{
+        font-size: 25px;
+
+        line-height: 1.4;
+
+        overflow-wrap: break-word;
+    }
+
+    .anatomyText p{
+        font-size: 16px;
+
+        line-height: 1.7;
+
+        overflow-wrap: break-word;
+    }
+
+    .subTitleAnatomy{
+        font-size: 14px;
+
+        letter-spacing: 2px;
+
+        line-height: 1.5;
+    }
+
+    .anatomyInfo{
+        width: 100%;
+    }
+
+    .iconeEsqueleto{
+        width: 80%;
+
+        max-width: 350px;
+
+        height: auto;
+    }
+
+
+    /* =========================
+       SEÇÃO EM DESENVOLVIMENTO
+    ========================= */
+
+    .sectionAnatomicalPieces{
+        width: 100%;
+
+        min-height: 55vh;
+
+        padding: 70px 40px;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+    .sectionAnatomyPiecesTitle{
+        font-size: 32px;
+
+        letter-spacing: 4px;
+
+        overflow-wrap: break-word;
+    }
+
+    .sectionAnatomyPiecesText{
+        width: 80%;
+        max-width: 700px;
+
+        margin: 0 auto 30px;
+
+        font-size: 16px;
+
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+       NOVOS BLOCOS
+    ========================= */
+
+    .sectionPiecesNew{
+        width: 100%;
+
+        box-sizing: border-box;
+    }
+
+    .sectionPiecesNewG{
+        width: 100%;
+
+        min-height: 70vh;
+
+        display: flex;
+
+        box-sizing: border-box;
+    }
+
+    .sectionPiecesNewBa,
+    .sectionPiecesNewBb,
+    .sectionPiecesNewT{
+        width: 50%;
+        min-width: 0;
+
+        box-sizing: border-box;
+    }
+
+    .sectionPiecesNewT{
+        padding: 60px 40px;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    .tituloH3{
+        font-size: 24px;
+
+        line-height: 1.5;
+    }
+
+    .blocoIntroductionParagraph{
+        font-size: 16px;
+
+        line-height: 1.7;
+
+        overflow-wrap: break-word;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer{
+        width: 100%;
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+        overflow-x: hidden;
+    }
+
+}
+
+
+/* =========================================================
+   CELULARES
+   ATÉ 480px
+========================================================= */
+
+@media (max-width: 480px){
+
+    /* =========================
+       GERAL
+    ========================= */
+
+    html,
+    body{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    section{
+        width: 100%;
+        max-width: 100%;
+
+        overflow-x: hidden;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p{
+        max-width: 100%;
+
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+
+    /* =====================================================
+       CAPA - MODELOS ANATÔMICOS
+    ===================================================== */
+
+    .sectionAnatomy{
+        width: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+        padding: 80px 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        text-align: center;
+        overflow: hidden;
+        background-position: center;
+    }
+
+    .sectionAnatomyTitle{
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+        padding: 0;
+
+        text-align: center;
+    }
+
+    .sectionAnatomyTitleH1{
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        font-size: 25px;
+
+        line-height: 1.4;
+
+        letter-spacing: 2px;
+
+        text-align: center;
+
+        overflow-wrap: break-word;
+    }
+
+    .sectionAnatomyTitleP{
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 15px;
+
+        font-size: 12px;
+
+        line-height: 1.6;
+
+        letter-spacing: 1.5px;
+
+        text-align: center;
+
+        overflow-wrap: break-word;
+    }
+
+    .arrow_down{
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 40px;
+    }
+
+    .arrow{
+        width: 45px;
+
+        height: auto;
+
+        max-width: 100%;
+    }
+
+
+    /* =====================================================
+       CONTROLES DE ACESSIBILIDADE
+    ===================================================== */
+
+    .vision-planner{
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 8px;
+
+        margin-bottom: 30px;
+
+        box-sizing: border-box;
+    }
+
+    .vision-planner button{
+        max-width: 100%;
+
+        font-size: 11px;
+
+        padding: 8px 10px;
+    }
+
+
+    /* =====================================================
+       INTRODUÇÃO
+    ===================================================== */
+
+    .sectionAnatomyIntrod{
+        width: 100%;
+        max-width: 100%;
+
+        min-height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+
+    /* =====================================================
+       BLOCO DE TEXTO
+    ===================================================== */
+
+    .AnatomyDivA{
+        width: 100%;
+        max-width: 100%;
+
+        min-width: 0;
+
+        padding: 55px 20px;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+    .anatomyText{
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        padding: 0;
+    }
+
+    .anatomyText > div{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .titleAnatomy{
+        width: 100%;
+        max-width: 100%;
+
+        margin-bottom: 25px;
+
+        font-size: 21px;
+
+        line-height: 1.5;
+
+        text-align: center;
+
+        letter-spacing: 1.5px;
+    }
+
+    .anatomyText p{
+        width: 100%;
+        max-width: 100%;
+
+        margin-bottom: 20px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        text-align: center;
+
+        overflow-wrap: break-word;
+    }
+
+    .subTitleAnatomy{
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 30px;
+        margin-bottom: 18px;
+
+        font-size: 12px;
+
+        line-height: 1.6;
+
+        letter-spacing: 2px;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       INFORMAÇÕES DO LABORATÓRIO
+    ===================================================== */
+
+    .anatomyInfo{
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 30px;
+
+        padding-top: 25px;
+
+        border-top: 1px solid #323232;
+
+        box-sizing: border-box;
+    }
+
+    .anatomyInfo p{
+        width: 100%;
+        max-width: 100%;
+
+        margin-bottom: 12px;
+
+        font-size: 13px;
+
+        line-height: 1.6;
+
+        text-align: left;
+
+        overflow-wrap: break-word;
+    }
+
+    .anatomyInfo p span{
+        color: #e12726;
+    }
+
+
+    /* =====================================================
+       IMAGEM DO ESQUELETO
+    ===================================================== */
+
+    .AnatomyDivB{
+        width: 100%;
+        max-width: 100%;
+
+        min-width: 0;
+
+        min-height: 75vh;
+
+        padding: 50px 20px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+    .iconeEsqueleto{
+        display: block;
+
+        width: 65%;
+
+        max-width: 250px;
+
+        height: auto;
+
+        margin: 0 auto;
+    }
+
+
+    /* =====================================================
+       EM DESENVOLVIMENTO
+    ===================================================== */
+
+    .sectionAnatomicalPieces{
+        width: 100%;
+        max-width: 100%;
+        background-position: bottom;
+        min-height: 75vh;
+
+        padding: 60px 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
+
+        text-align: center;
+
+        overflow: hidden;
+    }
+
+    .sectionAnatomyPiecesTitle{
+        width: 100%;
+        max-width: 100%;
+
+        margin-bottom: 25px;
+
+        font-size: 25px;
+
+        line-height: 1.4;
+
+        letter-spacing: 2px;
+
+        text-align: center;
+    }
+
+    .sectionAnatomyPiecesText{
+        width: 100%;
+        max-width: 100%;
+
+        margin-bottom: 30px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        text-align: center;
+    }
+
+    .buttonAnatomy{
+        max-width: 100%;
+
+        padding: 13px 20px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    /* =====================================================
+       BLOCOS DE PEÇAS ANATÔMICAS
+    ===================================================== */
+
+    .sectionPiecesNew{
+        width: 100%;
+        max-width: 100%;
+        background-position: top;
+        display: flex;
+
+        flex-direction: column;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+    .sectionPiecesNewG{
+        width: 100%;
+        max-width: 100%;
+
+        min-width: 0;
+
+        min-height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+
+    /* =====================================================
+       IMAGENS
+    ===================================================== */
+
+    .sectionPiecesNewBa,
+    .sectionPiecesNewBb{
+        width: 100%;
+        max-width: 100%;
+
+        min-width: 0;
+
+        min-height: 55vh;
+
+        order: 1;
+
+        box-sizing: border-box;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        overflow: hidden;
+    }
+
+
+    /* =====================================================
+       TEXTOS
+    ===================================================== */
+
+    .sectionPiecesNewT{
+        width: 100%;
+        max-width: 100%;
+
+        min-width: 0;
+
+        min-height: auto;
+
+        order: 2;
+
+        padding: 55px 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
+
+        text-align: center;
+
+        overflow: hidden;
+    }
+
+    .tituloH3{
+        width: 100%;
+        max-width: 100%;
+
+        margin-bottom: 25px;
+
+        font-size: 21px;
+
+        line-height: 1.5;
+
+        letter-spacing: 1.5px;
+
+        text-align: center;
+    }
+
+    .blocoIntroductionParagraph{
+        width: 100%;
+        max-width: 100%;
+
+        margin-bottom: 20px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+
+        text-align: center;
+
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+
+    /* =====================================================
+       ORDEM DOS BLOCOS
+    ===================================================== */
+
+    .sectionPiecesNewG:first-child .sectionPiecesNewBa{
+        order: 1;
+    }
+
+    .sectionPiecesNewG:first-child .sectionPiecesNewT{
+        order: 2;
+    }
+
+    .sectionPiecesNewG:nth-child(2) .sectionPiecesNewT{
+        order: 2;
+    }
+
+    .sectionPiecesNewG:nth-child(2) .sectionPiecesNewBb{
+        order: 1;
+    }
+
+
+    /* =====================================================
+       BOTÃO
+    ===================================================== */
+
+    .sectionPiecesNew .buttonAnatomy{
+        width: 100%;
+        max-width: 250px;
+
+        margin-top: 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       REDES SOCIAIS
+    ===================================================== */
+
+    .section-final{
+        width: 100%;
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+
+        text-align: center;
+    }
+
+    .section-final h2{
+        max-width: 100%;
+
+        font-size: 18px;
+
+        line-height: 2;
+
+        overflow-wrap: break-word;
+    }
+
+    .section-final img{
+        display: inline-block;
+
+        width: 30px;
+        height: auto;
+
+        margin: 5px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    footer{
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        box-sizing: border-box;
+
+        overflow-x: hidden;
+    }
+
+    .footer-one{
+        width: 100%;
+        max-width: 100%;
+
+        margin-bottom: 30px;
+
+        box-sizing: border-box;
+    }
+
+    .footer-two{
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 35px;
+
+        box-sizing: border-box;
+    }
+
+    .footer-two-bloco{
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 30px;
+
+        box-sizing: border-box;
+    }
+
+    .footer-two-bloco-bloco{
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+
+        box-sizing: border-box;
+    }
+
 }
