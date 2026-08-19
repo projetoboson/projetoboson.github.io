@@ -163,6 +163,10 @@ small{
    min-height: 15vh;
    flex-wrap: wrap;
    justify-content: space-around;
+   top: 0;
+   width: 100%;
+   position: fixed;
+   z-index: 10;
 }
 .header-header{
    display: flex;
@@ -243,7 +247,7 @@ a{
 }
 /**__________________________________________________________________________________________________________PÁGINA INICIAL DO PROJETO*/
 .section-laboratory{
-   min-height:85vh;
+   min-height:101vh;
    display: flex;
    flex-direction: column; 
    justify-content:center;
@@ -1177,7 +1181,7 @@ header label:hover{
 @media (max-width: 600px) {
 
     .feira-dados {
-        height: 100vh;
+        height: 80vh;
         min-height: 100vh;
         padding: 15px;
     }
@@ -1264,13 +1268,13 @@ header label:hover{
 @media (max-width: 768px) {
 
     .feira-dados {
-        min-height: 100vh;
+        min-height: 80vh;
         display: flex;
         padding: 10px;
     }
     .feira-dados-conteudo{
         display: flex;
-        min-height: 100vh;
+        min-height: 80vh;
         flex-direction: column;
         justify-content: space-around;
         margin-top: -75px;
@@ -1350,6 +1354,10 @@ header label:hover{
         padding: 0 20px;
         position: relative;
         flex-wrap: nowrap;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
     }
 
     .header-header {
@@ -1507,6 +1515,10 @@ header label:hover{
         min-height: 80px;
         padding: 0 15px;
         flex-wrap: nowrap;
+        top: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
     }
     .header-header{
         margin-left: 0;
@@ -1534,7 +1546,7 @@ header label:hover{
        INTRODUÇÃO / NOSSO LABORATÓRIO
     =================================================== */
     .section-laboratory{
-        min-height: 100vh;
+        min-height: 80vh;
         background-position: center;
         align-items: center;
         justify-content: center;
@@ -1579,7 +1591,7 @@ header label:hover{
        COLEÇÕES ZOOLÓGICAS
     =================================================== */
     .section-invertebrates{
-        min-height: 100vh;
+        min-height: 80vh;
         background-position: center;
         align-items: center;
         justify-content: center;
@@ -1595,7 +1607,7 @@ header label:hover{
        PEÇAS ANATÔMICAS
     =================================================== */
     .section-anatomical-pieces{
-        min-height: 100vh;
+        min-height: 80vh;
         background-position: center;
         align-items: center;
         justify-content: center;
@@ -1610,7 +1622,7 @@ header label:hover{
        FORMAÇÃO DA VIDA
     =================================================== */
     .section-fetuses{
-        min-height: 100vh;
+        min-height: 80vh;
         background-position: center;
         align-items: center;
         justify-content: center;
@@ -1719,7 +1731,7 @@ header label:hover{
     =================================================== */
 
     .contact-reserva{
-        min-height: 100vh;
+        min-height: 80vh;
         max-height: none;
         padding: 50px 20px;
         text-align: center;
