@@ -539,6 +539,7 @@
         background-position: center;
        background-size: 225%;
        background-position: 50% 85%;
+       background-attachment: scroll;
     }
 
     .sectionAnatomyTitle{
