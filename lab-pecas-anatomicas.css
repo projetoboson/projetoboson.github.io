@@ -537,6 +537,8 @@
         text-align: center;
         overflow: hidden;
         background-position: center;
+       background-size: 225%;
+       background-position: 50% 85%;
     }
 
     .sectionAnatomyTitle{
@@ -885,6 +887,7 @@
         box-sizing: border-box;
 
         overflow: hidden;
+        background-position: 50%;
     }
 
     .sectionPiecesNewG{
