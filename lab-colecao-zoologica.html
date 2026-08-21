@@ -32,49 +32,62 @@
   <header class="header">
     <div class="header-header">
       <a href="index.html">
-        <div class="logo-tubo">
-        <img src="./icones.img/logo-altivo-sf.png" width="90px" class="logo" title="Laboratório Altivo" alt = "Logo da escola Altivo"><br>
-        <div class="container-bolhas">
-        <span style="--x: -10px; --delay: 0s; --size: 8px;"></span>
-        <span style="--x: 15px; --delay: 0.4s; --size: 12px;"></span>
-        <span style="--x: -5px; --delay: 0.8s; --size: 6px;"></span>
-        <span style="--x: 8px; --delay: 1.2s; --size: 10px;"></span>
-    </div>
-</div>
-       <div class="small">
+
+      <div class="logo-tubo">
+        <img src="./icones.img/logo-altivo-sf.png" width="90px" class="logo" title="" alt = "Logo da escola Altivo"><br>
         
+        <div class="container-bolhas">
+          <span style="--x: -10px; --delay: 0s; --size: 8px;"></span>
+          <span style="--x: 15px; --delay: 0.4s; --size: 12px;"></span>
+          <span style="--x: -5px; --delay: 0.8s; --size: 6px;"></span>
+          <span style="--x: 8px; --delay: 1.2s; --size: 10px;"></span>
+        </div>
+
+        <!-- <div class="nome-projeto">
+          <span>PROJETO</span> <strong>BOSON</strong>
+        </div>
+       -->
+      </div>
+        
+        <div class="small">
+          <!-- <small>LABS ALT</small> -->
         </div>
       </a>
     </div>
-      <nav class="header-nav">
+
+      <nav class="header-nav" id="menu">
         <div class="header-nav-links">     
-          <a href="ciencias-lab.html" class="animado">NÊUTRON</a>
-          <a href="./fisica-lab.html" class="animado">ELÉTRON</a> 
-          <a href="quimica-lab.html" class="animado">PRÓTON</a>
-          <a href="feira-de-ciencias.html" class="animado">FEIRA DE CIÊNCIAS</a>
+          <a href="./projeto-neutron.html" class="animado">NÊUTRON</a>
+          <a href="./projeto-eletron.html" class="animado">ELÉTRON</a> 
+          <a href="./projeto-proton.html" class="animado">PRÓTON</a>
+          <a href="./feira-de-ciencias.html" class="animado">FEIRA DE CIÊNCIAS</a>
           <a href="contato.html" class="animado">CONTATO</a>          <!--fazer formulário-->
         </div>
 
         <div class="header-nav-matricula">
-          <a href="./data-base.html" class="btn-animado">BANCO DE DADOS</a>
+          <a href="./" class="btn-animado">BANCO DE DADOS</a>
           <a href="./area-do-estudante.html" class="btn-animado">BIOSFERA</a>
         </div>
       </nav>
+    <button id="btn-menu" class="btn-menu-mobile" aria-label="Abrir menu">
+      ☰
+    </button>
+    
   </header>
 
   <main class="labMicroscopy">
     <section class="sectionZoo"> 
-      <div class="vision-planner"> 
+      <!-- <div class="vision-planner"> 
         <button id="modo-fonte">Aumentar fonte</button>
         <button id="modo-fonteComum">Diminuir fonte</button>
         <button id="modo-fonte">Aumentar contrase</button>
         <button id="modo-fonteComum">Descrição de imagem</button>
         <button id="modo-fonte">Leitura por voz</button>
-      </div>
+      </div> -->
 
       <div class="sectionZootitle">
-        <p class="title-principal-new">COLEÇÕES</p>
-        <h1 class="title-principal">UNIVERSO ZOO</h1>
+        <p class="tituloH3">COLEÇÕES BIOLÓGICAS</p>
+        <h1 class="tituloH3n">UNIVERSO ZOO</h1>
       </div>
 
       <div class="arrow_down">
@@ -84,12 +97,19 @@
 
     <section class="sectionZooBloco">
         <div class="sectionZooText">
-          <h3 class="tituloH3">TÍTULO PROVISÓRIO</h3>
-          <p class="blocoIntroductionParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quibusdam, optio corrupti iste ex eligendi. Eaque, ut 
-            itaque. Illum dolor quos ab quasi corporis quaerat ex libero quas recusandae pariatur. Lorem ipsum dolor sit amet consectetur
-             adipisicing elit. Dignissimos quod facere eum iste facilis harum culpa voluptates maiores dicta.</p>
-          <p class="blocoIntroductionParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ducimus inventore dolorum autem deleniti eaque error sit, 
-            a aperiam voluptatem provident, commodi quas explicabo cum magni beatae sunt totam excepturi.</p>
+          <h3 class="tituloH3">COLEÇÕES ZOOLÓGICAS</h3>
+<p class="blocoIntroductionParagraph">
+  As coleções zoológicas reúnem exemplares de diferentes grupos de animais, 
+  organizados e catalogados para fins de estudo, ensino e divulgação científica. 
+  Cada espécime representa uma oportunidade de conhecer melhor a diversidade 
+  da vida e as características que distinguem os diferentes grupos animais.
+</p>
+<p class="blocoIntroductionParagraph">
+  No laboratório, os exemplares são utilizados como recursos didáticos para 
+  aproximar os estudantes da Zoologia. A observação de estruturas, formas, 
+  adaptações e características anatômicas permite compreender a diversidade 
+  animal de maneira mais concreta e investigativa.
+</p>
         <button class="ZooProjectContainerButton">MAIS INFORMAÇÕES</button>
           </div>
         <div class="sectionZooIMG">
@@ -99,12 +119,23 @@
 
     <section class="sectionZooBloco">
       <div class="sectionZooText">
-        <h3 class="tituloH3">TÍTULO PROVISÓRIO</h3>
-        <p class="blocoIntroductionParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quibusdam, optio corrupti iste ex eligendi. Eaque, ut 
-        itaque. Illum dolor quos ab quasi corporis quaerat ex libero quas recusandae pariatur. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Dignissimos quod facere eum iste facilis harum culpa voluptates maiores dicta.</p>
-        <p class="blocoIntroductionParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ducimus inventore dolorum autem deleniti eaque error sit, 
-        a aperiam voluptatem provident, commodi quas explicabo cum magni beatae sunt totam excepturi.</p>
+<h3 class="tituloH3">DIVERSIDADE ANIMAL</h3>
+
+<p class="blocoIntroductionParagraph">
+  A diversidade zoológica pode ser observada na enorme variedade de formas, 
+  estruturas, comportamentos e estratégias de sobrevivência encontradas no 
+  reino animal. Desde pequenos invertebrados até grandes vertebrados, cada 
+  organismo apresenta características relacionadas ao ambiente em que vive.
+</p>
+
+<p class="blocoIntroductionParagraph">
+  O estudo desses organismos permite compreender relações evolutivas, 
+  adaptações e interações ecológicas. Por meio das coleções e das atividades 
+  práticas do laboratório, os estudantes podem observar essa diversidade e 
+  desenvolver uma compreensão mais ampla sobre a fauna e sua importância 
+  para os ecossistemas.
+</p>
+
         <button class="ZooProjectContainerButton">MAIS INFORMAÇÕES</button>
 
       </div>
@@ -114,12 +145,22 @@
 
     <section class="sectionZooBloco">
       <div class="sectionZooText">
-      <h3 class="tituloH3">TÍTULO PROVISÓRIO</h3>
-      <p class="blocoIntroductionParagraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quibusdam, optio corrupti iste ex eligendi. Eaque, ut 
-      itaque. Illum dolor quos ab quasi corporis quaerat ex libero quas recusandae pariatur. Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Dignissimos quod facere eum iste facilis harum culpa voluptates maiores dicta.</p>
-      <p class="blocoIntroductionParagraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ducimus inventore dolorum autem deleniti eaque error sit, 
-      a aperiam voluptatem provident, commodi quas explicabo cum magni beatae sunt totam excepturi.</p>
+  <h3 class="tituloH3">EXAME DE BIO</h3>
+
+  <p class="blocoIntroductionParagraph">
+    O estudo da Zoologia começa pela observação e identificação das 
+    características que permitem reconhecer os diferentes grupos de animais. 
+    Estruturas corporais, formas de locomoção, alimentação, reprodução e 
+    adaptações ao ambiente são alguns dos aspectos analisados durante as 
+    atividades desenvolvidas no laboratório.
+  </p>
+
+  <p class="blocoIntroductionParagraph">
+    Por meio da observação de exemplares e materiais didáticos, os estudantes 
+    podem relacionar os conteúdos estudados em sala de aula com estruturas 
+    reais, desenvolvendo a capacidade de observar, comparar, identificar e 
+    interpretar características dos organismos.
+  </p>
       <button class="ZooProjectContainerButton">MAIS INFORMAÇÕES</button>
       </div>
       <div class="sectionZooIMG3">
@@ -145,11 +186,16 @@
 
 <footer>
   <div class="footer-one">
-    <a href="https://sites.google.com/view/escolaaltivo/home"><img src="./icones.img/icone-escola.png" style="height: 150px;"></a>
-    <h3><a href="https://sites.google.com/view/escolaaltivo/home">© 2026 Escola Altivo 2026</a></h3>
-    <div class="footer-one-init">
+    <h3><a href=""class="animadoFooter">CONTATO</a></h3> 
+    <a href="https://sites.google.com/view/escolaaltivo/home"><img src="./icones.img/icone-principal.png"></a>
+    <div> 
+      <h3><a href=""class="animado">LGPD</a></h3> 
       <h3><a href=""class="animado">Políticas de Privacidade</a></h3>
-      <h3><a href=""class="animado">Termos de Uso</a></h3>
+      <h3><a href=""class="animado">Termos de Uso</a></h3> 
+    </div>
+    <div class="footer-one-init">
+   
+      <h3><a href="https://sites.google.com/view/escolaaltivo/home">© 2026 Escola Altivo</a></h3>
     </div>
   </div>
 
@@ -236,7 +282,35 @@
 
   </div>
   
-</footer> 
+</footer>   
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<script>
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+
+    loader.style.opacity = '0';
+
+    setTimeout(() => {
+        loader.style.display = 'none';
+    }, 600);
+});
+</script>
+
+<script>
+const btnMenu = document.getElementById("btn-menu");
+const menu = document.getElementById("menu");
+
+btnMenu.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+});
+
+</script>
 
 </body>
 </html>
