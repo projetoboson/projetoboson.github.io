@@ -1,6 +1,6 @@
 /**_______________________________________________________________________________________________________________GALERIA - FEIRAS*/
 .capa-galeria-feiras{
-   min-height: 85vh; 
+   min-height: 101vh; 
    gap: 50px 0px;
    display: flex;
    justify-content: space-evenly;
